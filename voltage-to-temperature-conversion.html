@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voltage To Temperature Conversion - QnA</title>
+    <meta name="description" content="Voltage To Temperature Conversion, , , , , , , 0, Reading a Thermistor | Christopher J. MacLellan, chrismaclellan.com, 812 x 612, png, , 20, voltage-to-temperature-conversion, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Voltage To Temperature Conversion - QnA" />
+    <meta property="og:description" content="Voltage To Temperature Conversion, , , , , , , 0, Reading a Thermistor | Christopher J. MacLellan, chrismaclellan.com, 812 x 612, png, , 20, voltage-to-temperature-conversion, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Voltage To Temperature Conversion - QnA" />
+    <meta name="twitter:description" content="Voltage To Temperature Conversion, , , , , , , 0, Reading a Thermistor | Christopher J. MacLellan, chrismaclellan.com, 812 x 612, png, , 20, voltage-to-temperature-conversion, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pingstudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pingstudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pingstudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pingstudy.github.io">Home</a></li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pingstudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Voltage To Temperature Conversion</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">racile</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Voltage+To+Temperature+Conversion" alt="Voltage To Temperature Conversion">
+                    </div>
+                    <p></p>
+                    <p>
+Resistance temperature detector or RTD operates on what principle?
+                                                           A. Resistance of metal changes as voltage changes.
+                                                           B. Voltage value changes as its temperature changes.
+                                                          C. Resistance changes as its temperature changes.
+                                                         D. Resistance and voltage value change with temperature.</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#resistance-temperature-detector-or-rtd-operates-on-what-principle-a-resistance-of-metal-changes-as-voltage-changes">1.
+                                            
+Resistance temperature detector or RTD operates on what principle?
+                                                           A. Resistance of metal changes as voltage changes.
+                                                           B. Voltage value changes as its temperature changes.
+                                                          C. Resistance changes as its temperature changes.
+                                                         D. Resistance and voltage value change with temperature.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#as-voltage_____-the-current-_____-voltage-and-current-are-______-while-the-resistance-remains-______-voltage-and-current-are-_____-so-the-resistance-of-a-material-is-_____-as-long-as-the-temperature">2.
+                                            As voltage_____.the current _____.voltage and current are ______.while the resistance remains ______. voltage and current are _____ so the resistance of a material is _____. as long as the temperature does ______. if voltage is ______ then current _____ as resistance _______</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#state-how-resistance-current-and-voltage-generally-change-when-temperature-increases-%e2%80%8b">3.
+                                            State how resistance, current and voltage generally change when temperature increases.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-at-a-high-temperature-the-violent-vibration-of-atoms-would-result-to-a-greater-collision-in-the-flow-ofcurrent-this-createsa-less-resistancec-more-resistanceb-less-voltaged-more-voltage">4.
+                                            3. At a high temperature, the violent vibration of atoms would result to a greater collision. In the flow ofcurrent this createsA. less resistanceC. more resistanceB. less voltageD. more voltage​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-voltage-required-by-the-object-in-order-for-it-to-run-a-room-with-a-temperature-of-50-if-it-has-has-a-resistance-200-the-amount-of-power-the-place-has-is-2500-watts">5.
+                                            what is the voltage required by the object in order for it to run a room with a temperature of 50 if it has has a resistance 200? the amount of power the place has is 2500 watts?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-earthing-or-grounding-important-it-gives-protection-against-_________-a-danger-of-electric-shockb-high-temperature-of-the-conductorsc-overloadingd-voltage-fluctuation%e2%80%8b">6.
+                                            Why is earthing or grounding important it gives protection against _________.A. danger of electric shockB. high temperature of the conductorsC. overloadingD. voltage fluctuation​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-required-that-the-loading-of-3kw-be-maintained-in-a-heating-element-at-an-initial-temperature-of-20%c2%b0c-a-voltage-of-220v-is-necessary-for-the-purpose-after-the-element-has-settled-down-to">7.
+                                            It is required that the loading of 3KW be maintained in a heating element at an initial temperature of 20°C, a voltage of 220V is necessary for the purpose. After the element has settled down to steady state, it is found the voltage of 240V is necessary to maintain the 3KW loading; the element resistance temperature coefficient is 0.0006 per degree Centigrade at 20°C. Calculate the final temperature of the heating element​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#at-constant-temperature-the-resistance-of-a-conductor-changes-according-to-the-applied-voltage-true-or-false%e2%80%8b">8.
+                                            at constant temperature the resistance of a conductor changes according to the applied voltage true or false​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#translate-in-tagalocapacitors-operated-above-the-maximum-recommended-temperature-limit-of-150%c2%b0will-have-a-shortened-life-expectancy-this-is-due-to-the-increased-evaporationrate-of-their-water-co">9.
+                                            Translate in TagaloCapacitors operated above the maximum recommended temperature limit of 150°will have a shortened life expectancy. This is due to the increased evaporationrate of their water content. The arcing or puncture point of the oxide film ordialectric is lowered at high temperatures. The possibility of voltage failure in¬creases as the temperature rises.
+​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-why-is-earthing-or-grounding-important-it-gives-protection-against_a-danger-of-electric-shockb-high-temperature-of-the-conductorsc-overloading-d-voltage-fluctuation%e2%80%8b">10.
+                                            5. Why is earthing or grounding important? It gives protection against_A. danger of electric shockB. high temperature of the conductorsC. overloading D. voltage fluctuation​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#12-which-expands-the-greatest-when-heated-at-the-same-temperature-b-solid-c-liquid-d-all-expand-equally-a-gas13-which-of-the-following-statement-is-correct-a-heat-is-an-energy-form-that-trans">11.
+                                            12. Which expands the greatest when heated at the same temperature? B. solid C. liquid D. all expand equally A. gas13. Which of the following statement is correct? A. Heat is an energy form that transfers from a body of higher temperature to another body of lower temperature. B. Heat is the measure of the hotness and coldness of the body. C. Heat is the transfer of energy from a body of lower temperature to another body of higher temperature, D. Temperature is an energy form that transfers from a body of higher temperature to another body of lower temperature. 14. What is the electric current if a circuit has a resistance of 100 N and voltage of 25.0 V? (I=V/R) A. 0.120 A B. 9.00 A C. 0.25 A D. 25.0 A 15. Ampere is a unit of what electrical quantity? A. current B. load C. resistance D. voltage​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-the-si-unit-for-resistance8-a-rule-that-reflects-the-relation-among-voltage-current-and-resistance9-the-rate-of-electric-energy-conversion-into-other-types-of-energy-10-it-is-the-unit-of-powe">12.
+                                            7.The SI unit for resistance?
+8.A rule that reflects the relation among voltage, current and resistance?
+9.The rate of electric energy conversion into other types of energy.?
+10.It is the unit of power.?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#16-which-of-the-following-conducting-wires-has-the-least-resistance-a-steel-wire-at-room-temperature-b-steel-wire-at-higher-temperature-c-copper-wire-at-room-temperature-d-copper-wire-at-higher">13.
+                                            16. Which of the following conducting wires has the least resistance? A. Steel wire at room temperature B. Steel Wire at higher temperature C. Copper wire at room temperature D. Copper wire at higher temperature 17. Which of the following electrical quantities in parallel circuit is constant? A. Voltage B. Current C. Resistance D. total resistance 18. What happens to the brightness of the bulbs connected in series when more and more bulbs are added to the circuit? A. Increases B. Decreases C. remains the same D. cannot be predicted 19. What is the SI unit of resistance? A. Ampere B. Ohm C. Volt D. Watt 20. Which of the following is the correct statement of Ohm's Law? A. When current increases in a circuit, voltage increases and resistance increases. B. When current increases in a circuit, voltage decreases and resistance increases. C. When current decreases in a circuit, voltage decreases and resistance increases. D. When current increases in a circuit, voltage increases while resistance remains constant.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-what-instrument-is-the-best-for-measuring-the-voltage-of-the-batterya-multi-tester-b-timing-light-c-temperature-gauge-d-compression-testergauge">14.
+                                            
+5. What instrument is the best for measuring the voltage of the battery?
+A. Multi-tester B. Timing Light C. Temperature Gauge D. Compression Tester/Gauge</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ohms-law-shows-the-link-between-current-voltage-and-resistance-as-voltage-1______the-current-2-_____voltage-and-currentare-3____while-the-resistance-remains-4____voltage-and-current-are-5-___so-the">15.
+                                            Ohm's Law shows the link between current, voltage and resistance.As voltage 1______the current 2._____Voltage and currentare 3____while the resistance remains 4____Voltage and current are 5.___so the resistance of a materialis 6.____as long as the temperature does 7._____If voltage is 8____then current 9_____as resistance10._____choices:increasedecreasepropotionalconstantnot change​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-voltage-voltage-is-the-__________">16.
+                                            what is voltage? voltage is the __________</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#in-____-computers-computation-is-carried-out-with-physical-quantities-such-as-voltage-length-current-temperature-etc-a-analogb-digitalc-hybridd-micro-computer%e2%80%8b">17.
+                                            In ____ computers, computation is carried out with physical quantities such as voltage, length, current, temperature, etc.(A) Analog(B) Digital(C) Hybrid(D) Micro computer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-silicon-diode-with-id-equal-to-100ma-and-vd-equal-to-0-7v-is-at-room-temperature-of-25-deg-c-if-the-room-temperature-is-increased-by-10-deg-c-what-will-be-now-the-voltage-drop-of-the-diode">18.
+                                            A silicon diode with ID equal to 100mA and VD equal to 0.7V is at room temperature of 25 deg C. If the room temperature is increased by 10 deg C, what will be now the voltage drop of the diode?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-will-you-increase-if-you-want-to-increase-the-flow-of-current-in-a-circuit-a-conducting-wire-b-temperature-c-resistance-d-voltage%e2%80%8b">19.
+                                            which of the following will you increase if you want to increase the flow of current in a circuit? A. conducting wire B. temperature C. resistance D. voltage​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#something-that-would-affect-the-ampacity-of-a-conductor-would-be-_______-a-voltage-b-length-c-amperage-d-temperature%e2%80%8b">20.
+                                            something that would affect the ampacity of a conductor would be _______       a. voltage b. length  c. amperage  d. temperature​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-flows-in-a-wire-a-proton-b-electron-c-atoms-d-neutron-2-what-is-electric-current-a-the-rate-of-flow-of-electric-charges-from-one-point-to-another-in-a-circuit-b-the-difference-in-pot">21.
+                                            1. What flows in a wire? A. Proton B. Electron C. Atoms D. Neutron 2. What is electric current? A. The rate of flow of electric charges from one point to another in a circuit. B. The difference in potential C. The resistance D. The brightness of the light 3. What is the unit for voltage? A. Volts B. Amperes C. Ohms D. Joules 4. What is the material used to resist the flow of current? A. Insulator B. Conductor C. Light Bulb D. Voltage 5. What makes current to move? A. Resistance B. Current C. Circuit D. Voltage 6. Which of the following properties of materials does NOT affect resistance? A. Length B. Thickness C. Temperature D. Strength of the material 7. Ampere is a unit of what electrical quantity? A. Current B. Load C. Resistance D. Voltage 8. What type of conducting wire has the greatest resistance to the flow of current? A. thin, long wire B. thick, long wire C. thin, short wire D. thick, short wire 9. Which of the following conducting wires has the least resistance? 	 A.	Steel wire at room temperature B.	Steel wire at higher temperature	 C.	Copper wire at room temperature D.	Copper wire at higher temperature 10. Electrical resistance depends on what? A. Temperature B. Voltage C. Current D. Pressure​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-much-power-is-required-by-an-objects-with-a-resistance-of-100-ohms-and-voltage-of-100-volts-if-its-to-run-inside-a-room-that-has-a-temperature-15-degree-centrigrade">22.
+                                            How much power is required by an objects with a resistance of 100 ohms and voltage of 100 volts if its to run inside a room that has a temperature 15 degree centrigrade?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-voltage-multiplier-that-produces-an-output-voltage-from-the-input-voltage-with-a-multiplication-factor-of-four-select-onea-voltage-fourplierb-voltage-doublestc-capacitor-multiplierd-voltag">23.
+                                            A voltage multiplier that produces an output voltage from the input voltage with a multiplication factor of four.
+Select one:
+a. Voltage fourplier
+b. Voltage doublest
+c. Capacitor multiplier
+d. Voltage quadrupler</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#remains-the-same10-which-of-the-following-statements-is-correct-about-the-relationship-of-voltageand-currenta-current-varies-directly-with-voltage-and-resistance-is-changing-b-current-varies-indir">24.
+                                            remains the same10. Which of the following statements is correct about the relationship of voltageand current?A. Current varies directly with voltage and resistance is changing.B. Current varies indirectly with voltage and resistance is changing.C. Current varies directly with voltage when resistance remainsconstant.D. Current varies indirectly with voltage when resistance remainsconstant.11. What type of conducting wire has the greatest resistance to the flow of current?A. thin, long wireB. thick, long wireC. thin, short wireD. thick, short wire12. Which of the following conducting wires has the least resistance?A. Steel wire at room temperatureB. Steel wire at higher temperatureC. Copper wire at room temperatureD. Copper wire at higher temperature13​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-is-a-derived-quantity-a-electric-current-b-temperature-time-d-voltage%e2%80%8b">25.
+                                            . Which is a derived quantity? a. Electric current b. Temperature Time d. Voltage​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-earthing-or-grounding-important-it-gives-protection-against-_________-a-danger-of-electric-shockb-high-temperature-of-the-conductorsc-overloadingd-voltage-fluctuation%e2%80%8b">26.
+                                            Why is earthing or grounding important? It gives protection against _________.A. danger of electric shockB. high temperature of the conductorsC. overloadingD. voltage fluctuation​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#definition-of-voltageunit-of-maesurement-of-voltage-unit-abbreviation-of-voltageinstrument-to-maesure-of-voltage%e2%80%8b">27.
+                                            Definition of voltageUnit of maesurement of voltage Unit abbreviation of voltageInstrument to maesure of voltage​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#understanding-ohmdirection-inside-the-box-are-words-that-youll-be-needing-to-fill-in-the-blanks-below-write-the-correct-answer-on-the-blankspace-provided-after-each-numberincreaseproportionalnot-c">28.
+                                            Understanding OHMDirection: Inside the box are words that you'll be needing to fill in the blanks below.Write the correct answer on the blank/space provided after each number,IncreaseProportionalNot changeDecreaseConstantOhm's Law shows the link between current, voltage and resistance.As voltage 1the current 2.Voltage and currentare 3while the resistance remains4.Voltage and current are 5.so the resistance of a materialas long as the temperature does 7.then current 9.as resistance10.is.If voltage is 8​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-what-type-of-computer-that-are-used-to-measure-quantities-such-as-voltage-current-temperature-is-called%e2%80%8b">29.
+                                            3. What type of computer that are used to measure quantities such as voltage, current, temperature is called​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-is-the-number-of-charges-passing-through-a-wire-per-unit-time-a-current-d-voltage-c-resistance-b-power-2-what-is-the-si-unit-of-resistance-a-ampere-b-ohm-c-volt-d-watt-3-it-supplies">30.
+                                            1. It is the number of charges passing through a wire per unit time. A. current D. voltage C. resistance B. power 2. What is the SI unit of resistance? A. ampere B. ohm C. volt D. watt 3. It supplies energy in an electric circuit. A. load B. switch C. voltage source D. conducting wire 4. According to Ohm's law, across a resistor with constant resistance, what happens to the current across it when the voltage applied is halved? A. halved B. doubled C. quadrupled D. remains the same 5. What will happen to the current if the voltage is reduced to one half? A. tripled C. decreased by one hall B. doubled D. decreased by one fourth 6. What happens to the current across a circuit when the voltage is doubled while the resistance is held constant? A. tripled B. halved C. doubled D. remains the same 7. Which of the following conducting wires has the least resistance? A. Steel wire at room temperature C. Copper wire at room temperature B. Steel wire at higher temperature D. Copper wire at higher temperature 8. Which of the following statements is correct about the relationship of voltage and current? A. Current varies directly with voltage and resistance is changing. B. Current varies indirectly with voltage and resistance is changing. C. Current varies directly with voltage when resistance remains constant. D. Current varies indirectly with voltage when resistance remains constant​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="resistance-temperature-detector-or-rtd-operates-on-what-principle-a-resistance-of-metal-changes-as-voltage-changes">
+                            1. 
+Resistance temperature detector or RTD operates on what principle?
+                                                           A. Resistance of metal changes as voltage changes.
+                                                           B. Voltage value changes as its temperature changes.
+                                                          C. Resistance changes as its temperature changes.
+                                                         D. Resistance and voltage value change with temperature.</h2><br />
+                        <p><strong>Answer:</strong></p><p>Resistance Temperature Detectors (RTD) operates on the principle that the electrical resistance of a metal changes predictably in an essentially linear and repeatable manner with changes in temperature. RTD have a positive temperature coefficient (resistance increases with temperature).</p><br />
+                                            <h2 class="ez-toc-section" id="as-voltage_____-the-current-_____-voltage-and-current-are-______-while-the-resistance-remains-______-voltage-and-current-are-_____-so-the-resistance-of-a-material-is-_____-as-long-as-the-temperature">
+                            2. As voltage_____.the current _____.voltage and current are ______.while the resistance remains ______. voltage and current are _____ so the resistance of a material is _____. as long as the temperature does ______. if voltage is ______ then current _____ as resistance _______</h2><br />
+                        <p>voltage po current while po</p><br />
+                                            <h2 class="ez-toc-section" id="state-how-resistance-current-and-voltage-generally-change-when-temperature-increases-%e2%80%8b">
+                            3. State how resistance, current and voltage generally change when temperature increases.​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>The resistance increases with temperature due to the increased frequencies of the molecules inside the conductor. ... As the temperature goes up, the voltage goes up.</strong></p><p><strong>Explanation:</strong></p><p><strong>sana </strong><strong>po </strong><strong>makatulong~</strong></p><p>Answer:</p><p></p><p>Explanation:</p><p>Heating a metal conductor makes it more difficult for electricity to flow through it. Heating the metal conductor causes atoms to vibrate more, which in turn makes it more difficult for the electrons to flow, increasing resistance.</p><br />
+                                            <h2 class="ez-toc-section" id="3-at-a-high-temperature-the-violent-vibration-of-atoms-would-result-to-a-greater-collision-in-the-flow-ofcurrent-this-createsa-less-resistancec-more-resistanceb-less-voltaged-more-voltage">
+                            4. 3. At a high temperature, the violent vibration of atoms would result to a greater collision. In the flow ofcurrent this createsA. less resistanceC. more resistanceB. less voltageD. more voltage​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>C</strong><strong> </strong><strong>.</strong><strong>more</strong><strong> </strong><strong>resistance</strong></p><p></p><p><strong>Explanation:</strong></p><p>The effect of heat on the atomic structure of a material is to make the atoms vibrate, and the higher the temperature the more violently the atoms vibrate. ... </p><p></p><p>The more the atoms jostle around in the material, the more collisions are caused and hence the greater the resistance to current flow.</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-voltage-required-by-the-object-in-order-for-it-to-run-a-room-with-a-temperature-of-50-if-it-has-has-a-resistance-200-the-amount-of-power-the-place-has-is-2500-watts">
+                            5. what is the voltage required by the object in order for it to run a room with a temperature of 50 if it has has a resistance 200? the amount of power the place has is 2500 watts?</h2><br />
+                        <p><strong>Answer:</strong></p><p>(194-284+82)=91</p><p>yan po sagot</p><br />
+                                            <h2 class="ez-toc-section" id="why-is-earthing-or-grounding-important-it-gives-protection-against-_________-a-danger-of-electric-shockb-high-temperature-of-the-conductorsc-overloadingd-voltage-fluctuation%e2%80%8b">
+                            6. Why is earthing or grounding important it gives protection against _________.A. danger of electric shockB. high temperature of the conductorsC. overloadingD. voltage fluctuation​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Why is earthing or grounding important it gives protection against grounding is essential in an electrical installation to ensure safety and avoid serious consequences to people and equipment. A correct connection to physical earth provides the currents with a safe route and prevents these currents from finding unwanted routes that could cause damage.</p><p>Lettter B</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="it-is-required-that-the-loading-of-3kw-be-maintained-in-a-heating-element-at-an-initial-temperature-of-20%c2%b0c-a-voltage-of-220v-is-necessary-for-the-purpose-after-the-element-has-settled-down-to">
+                            7. It is required that the loading of 3KW be maintained in a heating element at an initial temperature of 20°C, a voltage of 220V is necessary for the purpose. After the element has settled down to steady state, it is found the voltage of 240V is necessary to maintain the 3KW loading; the element resistance temperature coefficient is 0.0006 per degree Centigrade at 20°C. Calculate the final temperature of the heating element​</h2><br />
+                        <p><strong>The final temperature of the heating element​ : 336.85°C</strong></p>Further explanation<p>Resistance increases with increasing temperature</p><p>Can be formulated :</p><p>[tex]\tt R=R_o[1+\alpha(T-T_o)]\\\\T=T_o+\dfrac{\dfrac{R}{R_o}-1 }{\alpha}[/tex]</p><p>R = conductor resistance at T</p><p>Ro = conductor resistance at temperature-To(20°C or 0°C)</p><p>T = final temperatur</p><p>To = reference temperature</p><p>α = the element resistance temperature coefficient</p><p></p><p>We can use Ohm's Law for basic calculation :</p><p><strong>W(watts)=E(volts) x I(amperes)</strong></p><p><strong>E(volts) = I(amperes) x R(ohms)</strong></p><p></p>Initial state<p>W=3KW=3000 watts</p><p>V=220 volts</p><p>Then the current (I) :</p><p>[tex]\tt I_o=\dfrac{W}{E}\\\\I_o=\dfrac{3000}{220}=13.636~A[/tex]</p><p>The resistance :</p><p>[tex]\tt R_o=\dfrac{E}{I}\\\\R_o=\dfrac{220}{13.636}=16.133~ohms[/tex]</p>Final state<p>[tex]\tt I=\dfrac{W}{E}\\\\I=\dfrac{3000}{240}=12.5~A[/tex]</p><p>[tex]\tt R=\dfrac{E}{I}\\\\R=\dfrac{240}{12.5}=19.2~ohms[/tex]</p>The final temperature <p>[tex]\tt T=20^oC+\dfrac{\dfrac{19.2}{16.133}-1 }{0.0006}\\\\T=20^oC+\dfrac{1.19011-1}{0.0006}\\\\T=20^oC+316.85\\\\T=\boxed{\bold{336.85^oC}}[/tex]</p><p></p>Learn more  <p><strong>Force of Attraction and a Force of Repulsion  </strong></p><p><strong>https://brainly.ph/question/2162118  </strong></p><p><strong>The magnitude of electrical force  </strong></p><p><strong>https://brainly.ph/question/2484031  </strong></p><p><strong>Two identical small charged spheres  </strong></p><p><strong>https://brainly.ph/question/1449377 </strong></p><p><strong>
+</strong></p><p><strong>#LetsStudy  </strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="at-constant-temperature-the-resistance-of-a-conductor-changes-according-to-the-applied-voltage-true-or-false%e2%80%8b">
+                            8. at constant temperature the resistance of a conductor changes according to the applied voltage true or false​</h2><br />
+                        <p><strong>Answer:</strong></p><p>true</p><p><strong>Explanation:</strong></p><p>hheehheeh sure yarn</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="translate-in-tagalocapacitors-operated-above-the-maximum-recommended-temperature-limit-of-150%c2%b0will-have-a-shortened-life-expectancy-this-is-due-to-the-increased-evaporationrate-of-their-water-co">
+                            9. Translate in TagaloCapacitors operated above the maximum recommended temperature limit of 150°will have a shortened life expectancy. This is due to the increased evaporationrate of their water content. The arcing or puncture point of the oxide film ordialectric is lowered at high temperatures. The possibility of voltage failure in¬creases as the temperature rises.
+​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Ang mga capacitor ay gumana nang higit sa maximum na inirerekomendang limitasyon sa temperatura na 150°</p><p></p><p>magkakaroon ng pinaikling pag-asa sa buhay. Ito ay dahil sa tumaas na pagsingaw</p><p></p><p>rate ng kanilang nilalaman ng tubig. Ang arcing o puncture point ng oxide film o</p><p></p><p>ibinababa ang dialectric sa mataas na temperatura. Ang posibilidad ng pagkabigo ng boltahe sa¬</p><p></p><p>lumulukot habang tumataas ang temperatura.</p><p><strong>Explanation:</strong></p><p>Here po your welcome!</p><br />
+                                            <h2 class="ez-toc-section" id="5-why-is-earthing-or-grounding-important-it-gives-protection-against_a-danger-of-electric-shockb-high-temperature-of-the-conductorsc-overloading-d-voltage-fluctuation%e2%80%8b">
+                            10. 5. Why is earthing or grounding important? It gives protection against_A. danger of electric shockB. high temperature of the conductorsC. overloading D. voltage fluctuation​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A. danger of electric shock</p><p><strong>Explanation:</strong></p><p>correct me if i'm wrong :'))</p><p><strong>Answer:</strong></p><p>5.b </p><p></p><p>sana makatulong I hope it helps</p><br />
+                                            <h2 class="ez-toc-section" id="12-which-expands-the-greatest-when-heated-at-the-same-temperature-b-solid-c-liquid-d-all-expand-equally-a-gas13-which-of-the-following-statement-is-correct-a-heat-is-an-energy-form-that-trans">
+                            11. 12. Which expands the greatest when heated at the same temperature? B. solid C. liquid D. all expand equally A. gas13. Which of the following statement is correct? A. Heat is an energy form that transfers from a body of higher temperature to another body of lower temperature. B. Heat is the measure of the hotness and coldness of the body. C. Heat is the transfer of energy from a body of lower temperature to another body of higher temperature, D. Temperature is an energy form that transfers from a body of higher temperature to another body of lower temperature. 14. What is the electric current if a circuit has a resistance of 100 N and voltage of 25.0 V? (I=V/R) A. 0.120 A B. 9.00 A C. 0.25 A D. 25.0 A 15. Ampere is a unit of what electrical quantity? A. current B. load C. resistance D. voltage​</h2><br />
+                        <p><strong>Answer:</strong></p><p>sagotan niyo to guys baka kailangan to ng iba</p><p><strong>Explanation:</strong></p>CHERINE<br />
+                                            <h2 class="ez-toc-section" id="7-the-si-unit-for-resistance8-a-rule-that-reflects-the-relation-among-voltage-current-and-resistance9-the-rate-of-electric-energy-conversion-into-other-types-of-energy-10-it-is-the-unit-of-powe">
+                            12. 7.The SI unit for resistance?
+8.A rule that reflects the relation among voltage, current and resistance?
+9.The rate of electric energy conversion into other types of energy.?
+10.It is the unit of power.?</h2><br />
+                        <p><strong>Answer:</strong></p><p>7. Ohm</p><p>8. Ohms Law</p><p>9. (Hindi ko alalm)</p><p>10.Watt</p><br />
+                                            <h2 class="ez-toc-section" id="16-which-of-the-following-conducting-wires-has-the-least-resistance-a-steel-wire-at-room-temperature-b-steel-wire-at-higher-temperature-c-copper-wire-at-room-temperature-d-copper-wire-at-higher">
+                            13. 16. Which of the following conducting wires has the least resistance? A. Steel wire at room temperature B. Steel Wire at higher temperature C. Copper wire at room temperature D. Copper wire at higher temperature 17. Which of the following electrical quantities in parallel circuit is constant? A. Voltage B. Current C. Resistance D. total resistance 18. What happens to the brightness of the bulbs connected in series when more and more bulbs are added to the circuit? A. Increases B. Decreases C. remains the same D. cannot be predicted 19. What is the SI unit of resistance? A. Ampere B. Ohm C. Volt D. Watt 20. Which of the following is the correct statement of Ohm's Law? A. When current increases in a circuit, voltage increases and resistance increases. B. When current increases in a circuit, voltage decreases and resistance increases. C. When current decreases in a circuit, voltage decreases and resistance increases. D. When current increases in a circuit, voltage increases while resistance remains constant.​</h2><br />
+                        <p><strong>Questions</strong><strong>:</strong></p><p>16. Which of the following conducting wires has the least resistance? </p><p>A. Steel wire at room temperature </p><p>B. Steel Wire at higher temperature </p><p>C. Copper wire at room temperature </p><p>D. Copper wire at higher temperature </p><p></p><p>17. Which of the following electrical quantities in parallel circuit is constant? </p><p>A. Voltage </p><p>B. Current </p><p>C. Resistance </p><p>D. total resistance </p><p></p><p>18. What happens to the brightness of the bulbs connected in series when more and more bulbs are added to the circuit? </p><p>A. Increases </p><p>B. Decreases </p><p>C. remains the same </p><p>D. cannot be predicted </p><p></p><p>19. What is the SI unit of resistance? </p><p>A. Ampere </p><p>B. Ohm </p><p>C. Volt </p><p>D. Watt </p><p></p><p>20. Which of the following is the correct statement of Ohm's Law? </p><p>A. When current increases in a circuit, voltage increases and resistance increases. </p><p>B. When current increases in a circuit, voltage decreases and resistance increases. </p><p>C. When current decreases in a circuit, voltage decreases and resistance increases. </p><p>D. When current increases in a circuit, voltage increases while resistance remains constant.</p><p></p><p><strong>Answers</strong><strong>:</strong></p><p>     16.  <strong>D</strong><strong>.</strong><strong> </strong><strong>Copper</strong><strong> </strong><strong>wire</strong><strong> </strong><strong>at</strong><strong> </strong><strong>higher</strong><strong> </strong><strong>temperature</strong></p><p>     17.  <strong>A</strong><strong>.</strong><strong> </strong><strong>Voltage</strong></p><p>     18. <strong>B</strong><strong>.</strong><strong> </strong><strong>Decreases</strong></p><p>     19. <strong>B</strong><strong>.</strong><strong> </strong><strong>Ohm</strong></p><p>     20. <strong>A. When current increases in a circuit, voltage increases and resistance increases. </strong></p><p></p><p><strong>Explanation:</strong></p><p>Hope it helps</p><strong>#CarryOnLearning</strong><strong>#BrainlyFast</strong><br />
+                                            <h2 class="ez-toc-section" id="5-what-instrument-is-the-best-for-measuring-the-voltage-of-the-batterya-multi-tester-b-timing-light-c-temperature-gauge-d-compression-testergauge">
+                            14. 
+5. What instrument is the best for measuring the voltage of the battery?
+A. Multi-tester B. Timing Light C. Temperature Gauge D. Compression Tester/Gauge</h2><br />
+                        <p><strong>Answer:</strong></p><p>well, b and D makes progress but i prefer b</p><p><strong>Answer:</strong></p><p>a</p><p><strong>Explanation:</strong></p><p>is measuring instrument that can measure multiple electrical properties</p><br />
+                                            <h2 class="ez-toc-section" id="ohms-law-shows-the-link-between-current-voltage-and-resistance-as-voltage-1______the-current-2-_____voltage-and-currentare-3____while-the-resistance-remains-4____voltage-and-current-are-5-___so-the">
+                            15. Ohm's Law shows the link between current, voltage and resistance.As voltage 1______the current 2._____Voltage and currentare 3____while the resistance remains 4____Voltage and current are 5.___so the resistance of a materialis 6.____as long as the temperature does 7._____If voltage is 8____then current 9_____as resistance10._____choices:increasedecreasepropotionalconstantnot change​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. increase</p><p>2. decrease</p><p>3. propotional</p><p>4. constant</p><p>5. propotional</p><p>6. constant</p><p>7. not change</p><p>8. propotional</p><p>9. increase</p><p>10. decrease</p><p><strong>Explanation:</strong></p><p>Hope it helps </p><br />
+                                            <h2 class="ez-toc-section" id="what-is-voltage-voltage-is-the-__________">
+                            16. what is voltage? voltage is the __________</h2><br />
+                        <p><strong>Answer:</strong></p><p>Voltage is defined so that negatively charged objects are pulled towards higher voltages, while positively charged objects are pulled towards lower voltages. Therefore, the conventional current in a wire or resistor always flows from higher voltage to lower voltage.</p><p><strong>Answer:</strong></p><p>Voltage is the pressure from an electrical circuit's power source that pushes charged electrons (current) through a conducting loop, enabling them to do work such as illuminating a light.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="in-____-computers-computation-is-carried-out-with-physical-quantities-such-as-voltage-length-current-temperature-etc-a-analogb-digitalc-hybridd-micro-computer%e2%80%8b">
+                            17. In ____ computers, computation is carried out with physical quantities such as voltage, length, current, temperature, etc.(A) Analog(B) Digital(C) Hybrid(D) Micro computer​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Analog</p><p><strong>Explanation:</strong></p><p>Analog computers is the question.</p>✏️ ANSWER:<p></p><p>In ____ computers, computation is carried out with physical quantities such as voltage, length, current, temperature, etc.</p><p></p><p>[tex]\purple{\rm \bold{.</p><p>\ A) Analog}}[/tex]</p><p>(B) Digital</p><p></p><p>(C) Hybrid</p><p></p><p>(D) Micro computer</p><p></p>╰➤In <strong>Analog</strong> computers, computation is carried out with physical quantities such as voltage, length, current, temperature, etc<p></p><p><strong>Explanation:</strong></p><p>✏️ HOPE IT'S HELP</p><p>#CarryOnLearning</p><p>[tex]\begin{gathered}\tiny\boxed{ \begin{array}{} \red{ \bowtie} \: \: \: \: \: \: \: \: \red{ \bowtie}\\ \fcolorbox{color}{purple}{ \tt{} &gt; &lt; }\\ \: \smile \end{array}}\end{gathered}[/tex]</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-silicon-diode-with-id-equal-to-100ma-and-vd-equal-to-0-7v-is-at-room-temperature-of-25-deg-c-if-the-room-temperature-is-increased-by-10-deg-c-what-will-be-now-the-voltage-drop-of-the-diode">
+                            18. A silicon diode with ID equal to 100mA and VD equal to 0.7V is at room temperature of 25 deg C. If the room temperature is increased by 10 deg C, what will be now the voltage drop of the diode?</h2><br />
+                        <p><strong>Answer:</strong></p><p>disowned me know when you're on si ate a whole bunch of your weekend anr bukas nlng</p><p><strong>Explanation:</strong></p><p>Jim is going on si dj hindi to get to the airp</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-will-you-increase-if-you-want-to-increase-the-flow-of-current-in-a-circuit-a-conducting-wire-b-temperature-c-resistance-d-voltage%e2%80%8b">
+                            19. which of the following will you increase if you want to increase the flow of current in a circuit? A. conducting wire B. temperature C. resistance D. voltage​</h2><br />
+                        <p><strong>Answer:</strong></p><p>a.</p><p><strong>Explanation:</strong></p><p>just do it and you will see </p><p><strong>Answer:</strong></p><p>D. Voltage </p><p><strong>Explanation:</strong></p><p>Voltage is the only one way to increase the flow of current in a circuit. On the other hand, to decrease the flow of current in a circuit is by decreasing the resistance.</p><br />
+                                            <h2 class="ez-toc-section" id="something-that-would-affect-the-ampacity-of-a-conductor-would-be-_______-a-voltage-b-length-c-amperage-d-temperature%e2%80%8b">
+                            20. something that would affect the ampacity of a conductor would be _______       a. voltage b. length  c. amperage  d. temperature​</h2><br />
+                        Question:Something that would affect the ampacity of a conductor would be__________<p></p>Answer:D.Temperature<p></p>hope it helpsCarry on learning<p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-what-flows-in-a-wire-a-proton-b-electron-c-atoms-d-neutron-2-what-is-electric-current-a-the-rate-of-flow-of-electric-charges-from-one-point-to-another-in-a-circuit-b-the-difference-in-pot">
+                            21. 1. What flows in a wire? A. Proton B. Electron C. Atoms D. Neutron 2. What is electric current? A. The rate of flow of electric charges from one point to another in a circuit. B. The difference in potential C. The resistance D. The brightness of the light 3. What is the unit for voltage? A. Volts B. Amperes C. Ohms D. Joules 4. What is the material used to resist the flow of current? A. Insulator B. Conductor C. Light Bulb D. Voltage 5. What makes current to move? A. Resistance B. Current C. Circuit D. Voltage 6. Which of the following properties of materials does NOT affect resistance? A. Length B. Thickness C. Temperature D. Strength of the material 7. Ampere is a unit of what electrical quantity? A. Current B. Load C. Resistance D. Voltage 8. What type of conducting wire has the greatest resistance to the flow of current? A. thin, long wire B. thick, long wire C. thin, short wire D. thick, short wire 9. Which of the following conducting wires has the least resistance? 	 A.	Steel wire at room temperature B.	Steel wire at higher temperature	 C.	Copper wire at room temperature D.	Copper wire at higher temperature 10. Electrical resistance depends on what? A. Temperature B. Voltage C. Current D. Pressure​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.B</p><p>2.A</p><p>3.A</p><p>4.D(not sure)</p><p>5.D</p><p>6.B</p><p>7.A</p><p>8.B</p><p>9.A(not sure)</p><p>10.C(not sure)</p><br />
+                                            <h2 class="ez-toc-section" id="how-much-power-is-required-by-an-objects-with-a-resistance-of-100-ohms-and-voltage-of-100-volts-if-its-to-run-inside-a-room-that-has-a-temperature-15-degree-centrigrade">
+                            22. How much power is required by an objects with a resistance of 100 ohms and voltage of 100 volts if its to run inside a room that has a temperature 15 degree centrigrade?</h2><br />
+                        <p>Tama ba lahat Ng binibigay na sagot dto?</p><br />
+                                            <h2 class="ez-toc-section" id="a-voltage-multiplier-that-produces-an-output-voltage-from-the-input-voltage-with-a-multiplication-factor-of-four-select-onea-voltage-fourplierb-voltage-doublestc-capacitor-multiplierd-voltag">
+                            23. A voltage multiplier that produces an output voltage from the input voltage with a multiplication factor of four.
+Select one:
+a. Voltage fourplier
+b. Voltage doublest
+c. Capacitor multiplier
+d. Voltage quadrupler</h2><br />
+                        <p><strong>Answer:</strong></p><p>d.</p><p><strong>Explanation:</strong></p><p></p><p>Answer:</p><p>The answer is "d. Voltage quadrupler".</p><p></p><p>Explanation:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="remains-the-same10-which-of-the-following-statements-is-correct-about-the-relationship-of-voltageand-currenta-current-varies-directly-with-voltage-and-resistance-is-changing-b-current-varies-indir">
+                            24. remains the same10. Which of the following statements is correct about the relationship of voltageand current?A. Current varies directly with voltage and resistance is changing.B. Current varies indirectly with voltage and resistance is changing.C. Current varies directly with voltage when resistance remainsconstant.D. Current varies indirectly with voltage when resistance remainsconstant.11. What type of conducting wire has the greatest resistance to the flow of current?A. thin, long wireB. thick, long wireC. thin, short wireD. thick, short wire12. Which of the following conducting wires has the least resistance?A. Steel wire at room temperatureB. Steel wire at higher temperatureC. Copper wire at room temperatureD. Copper wire at higher temperature13​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>10. C</strong></p><p><strong>11.  A</strong></p><p><strong>12. C</strong></p><p><strong>13. A</strong></p><p><strong>14. A</strong></p><p><strong>15. D</strong></p><p>                                                                                                                                                                                                                </p><br />
+                                            <h2 class="ez-toc-section" id="which-is-a-derived-quantity-a-electric-current-b-temperature-time-d-voltage%e2%80%8b">
+                            25. . Which is a derived quantity? a. Electric current b. Temperature Time d. Voltage​</h2><br />
+                        <p><strong>Answer:</strong></p><p>yes</p><p><strong>Explanation:</strong></p><p>because the temperature go</p><br />
+                                            <h2 class="ez-toc-section" id="why-is-earthing-or-grounding-important-it-gives-protection-against-_________-a-danger-of-electric-shockb-high-temperature-of-the-conductorsc-overloadingd-voltage-fluctuation%e2%80%8b">
+                            26. Why is earthing or grounding important? It gives protection against _________.A. danger of electric shockB. high temperature of the conductorsC. overloadingD. voltage fluctuation​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>A</strong></p><p><strong>Explanation:</strong></p><p></p><p>Grounding is essential in an electrical installation to ensure safety and avoid serious consequences to people and equipment. A correct connection to physical earth provides the currents with a safe route and prevents these currents from finding unwanted routes that could cause damage.</p><p></p><p></p><p><strong>#</strong><strong>CarryOnLearning</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="definition-of-voltageunit-of-maesurement-of-voltage-unit-abbreviation-of-voltageinstrument-to-maesure-of-voltage%e2%80%8b">
+                            27. Definition of voltageUnit of maesurement of voltage Unit abbreviation of voltageInstrument to maesure of voltage​</h2><br />
+                        <p><strong>Answer:</strong></p><p> Definition of voltagean:electromotive force or potential difference expressed in volts.</p><p>Unit of maesurement of voltage:Volt</p><p>Standard Electrical Units of Measure</p><p>Electrical Parameter	Measuring Unit	Symbol</p><p>Voltage	Volt	V or E</p><p>Current	Ampere	I or i</p><p>Resistance	Ohm	R or Ω</p><p>Conductance	Siemen	G or ℧</p><p>Unit abbreviation of voltage:</p><p>Volt V</p><p>Standard Electrical Units of Measure</p><p>Electrical Parameter	Measuring Unit	Symbol</p><p>Voltage	Volt	V or E</p><p>Current	Ampere	I or i</p><p>Resistance	Ohm	R or Ω</p><p>Conductance	Siemen	G or ℧</p><p>Instrument to maesure of voltage:voltmeter</p><p>The voltmeter is an ideal measuring device for the fast measurement of currents and voltages. To perform current measurements, a voltmeter must be connected in series to the load.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="understanding-ohmdirection-inside-the-box-are-words-that-youll-be-needing-to-fill-in-the-blanks-below-write-the-correct-answer-on-the-blankspace-provided-after-each-numberincreaseproportionalnot-c">
+                            28. Understanding OHMDirection: Inside the box are words that you'll be needing to fill in the blanks below.Write the correct answer on the blank/space provided after each number,IncreaseProportionalNot changeDecreaseConstantOhm's Law shows the link between current, voltage and resistance.As voltage 1the current 2.Voltage and currentare 3while the resistance remains4.Voltage and current are 5.so the resistance of a materialas long as the temperature does 7.then current 9.as resistance10.is.If voltage is 8​</h2><br />
+                        <p>the question is confussing arrange it correctly </p><p>thank you</p><br />
+                                            <h2 class="ez-toc-section" id="3-what-type-of-computer-that-are-used-to-measure-quantities-such-as-voltage-current-temperature-is-called%e2%80%8b">
+                            29. 3. What type of computer that are used to measure quantities such as voltage, current, temperature is called​</h2><br />
+                        <p><strong>Answer:</strong></p><p>I think the answer is Analog computer</p><p></p><p><strong>Explanation:</strong></p><p>Any of a class of devices in which continuously variable physical quantities, such as electrical potential, fluid pressure, or mechanical motion, are represented in a way analogous to the corresponding quantities in the problem to be solved.</p><br />
+                                            <h2 class="ez-toc-section" id="1-it-is-the-number-of-charges-passing-through-a-wire-per-unit-time-a-current-d-voltage-c-resistance-b-power-2-what-is-the-si-unit-of-resistance-a-ampere-b-ohm-c-volt-d-watt-3-it-supplies">
+                            30. 1. It is the number of charges passing through a wire per unit time. A. current D. voltage C. resistance B. power 2. What is the SI unit of resistance? A. ampere B. ohm C. volt D. watt 3. It supplies energy in an electric circuit. A. load B. switch C. voltage source D. conducting wire 4. According to Ohm's law, across a resistor with constant resistance, what happens to the current across it when the voltage applied is halved? A. halved B. doubled C. quadrupled D. remains the same 5. What will happen to the current if the voltage is reduced to one half? A. tripled C. decreased by one hall B. doubled D. decreased by one fourth 6. What happens to the current across a circuit when the voltage is doubled while the resistance is held constant? A. tripled B. halved C. doubled D. remains the same 7. Which of the following conducting wires has the least resistance? A. Steel wire at room temperature C. Copper wire at room temperature B. Steel wire at higher temperature D. Copper wire at higher temperature 8. Which of the following statements is correct about the relationship of voltage and current? A. Current varies directly with voltage and resistance is changing. B. Current varies indirectly with voltage and resistance is changing. C. Current varies directly with voltage when resistance remains constant. D. Current varies indirectly with voltage when resistance remains constant​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.A</p><p>2.B</p><p>3.C</p><p>4.B</p><p>5.B</p><p>6.B</p><p>7.D</p><p>8.C</p><p><strong>Explanation:Hope it Helps:&gt;</strong></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/wBDD0frprjE?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>technology_and_home_economics</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/module-in-science-9-teacher-s-guide.html">Module In Science 9 Teacher s Guide</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/4a-s-lesson-plan-in-filipino.html">4a s Lesson Plan In Filipino</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/ballad-of-a-mother-s-heart-lesson-plan-pdf.html">Ballad Of A Mother s Heart Lesson Plan Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/feynman-s-lost-lecture.html">Feynman s Lost Lecture</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/sugnay-na-makapag-iisa.html">Sugnay Na Makapag Iisa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/cora-s-kutsinta.html">Cora s Kutsinta</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/micom-p546.html">Micom P546</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/theory-x-and-theory-y-questionnaire.html">Theory X And Theory Y Questionnaire</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/fabric-structures-usa.html">Fabric Structures Usa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/panaghoy-kahulugan.html">Panaghoy Kahulugan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/vedecont.html">Vedecont</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/ppt-on-natural-and-manmade-disasters.html">Ppt On Natural And Manmade Disasters</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/mga-programa-ni-manuel-roxas.html">Mga Programa Ni Manuel Roxas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/ang-digmaan-sa-karagatan.html">Ang Digmaan Sa Karagatan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/detailed-lesson-plan-in-tle-dressmaking.html">Detailed Lesson Plan In Tle Dressmaking</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/example-of-drill-in-lesson-plan-in-english.html">Example Of Drill In Lesson Plan In English</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/halimbawa-ng-kambal-patinig.html">Halimbawa Ng Kambal Patinig</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/mga-ilog-sa-china.html">Mga Ilog Sa China</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/sino-si-francisco-maniago.html">Sino Si Francisco Maniago</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/makapaghihintay-ang-amerika-full-story.html">Makapaghihintay Ang Amerika Full Story</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pingstudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pingstudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>8 Bit Adder Verilog Code - QnA</title>
+    <meta name="description" content="8 Bit Adder Verilog Code, , , , , , , 0, Recall the structural Verilog description of a ripple | Chegg.com, www.chegg.com, 954 x 811, png, , 20, 8-bit-adder-verilog-code, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="8 Bit Adder Verilog Code - QnA" />
+    <meta property="og:description" content="8 Bit Adder Verilog Code, , , , , , , 0, Recall the structural Verilog description of a ripple | Chegg.com, www.chegg.com, 954 x 811, png, , 20, 8-bit-adder-verilog-code, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="8 Bit Adder Verilog Code - QnA" />
+    <meta name="twitter:description" content="8 Bit Adder Verilog Code, , , , , , , 0, Recall the structural Verilog description of a ripple | Chegg.com, www.chegg.com, 954 x 811, png, , 20, 8-bit-adder-verilog-code, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pingstudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pingstudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pingstudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pingstudy.github.io">Home</a></li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pingstudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">8 Bit Adder Verilog Code</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">1899estav</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=8+Bit+Adder+Verilog+Code" alt="8 Bit Adder Verilog Code">
+                    </div>
+                    <p></p>
+                    <p>verilog code for 8-bit adder/subtractor</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#verilog-code-for-8-bit-addersubtractor">1.
+                                            verilog code for 8-bit adder/subtractor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#an-adder-in-which-the-bits-of-the-operands-are-added-one-after-another-isa-serial-adderb-half-adderc-full-adderd-none-of-the-above%e2%80%8b">2.
+                                            An adder in which the bits of the operands are added one after another is(A) Serial adder(B) Half-adder(C) Full-adder(D) None of the above​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-program-execution-time-would-be-minimum-if-the-programs-are-written-ina-assembly-languageb-high-level-languagec-machine-languaged-none-of-the-above2-a-program-used-to-detect-overall-system">3.
+                                            1.)Program execution time would be minimum if the programs are written in(A) Assembly language(B) High level language(C) Machine language(D) None of the above2.)A program used to detect overall system malfunction is(A) System diagnostics(B) Utilities(C) System analysis(D) System software3.)An adder in which the bits of the operands are added one after another is(A) Serial adder(B) Half-adder(C) Full-adder(D) None of the above​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-meaning-of-puff-adder%e2%80%8b">4.
+                                            what is the meaning of puff adder?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#to-form-a-hamming-code-how-many-additional-bits-are-needed-for-1100010101100%e2%80%8b">5.
+                                            To form a hamming code, how many additional bits are needed for 1100010101100​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-commonly-used-as-code-in-computers-to-represent-and-interpret-letter-numbers-and-special-characters-with-bits%e2%80%8b">6.
+                                            it is commonly used as code in computers to represent and interpret letter, numbers, and special characters with bits​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-the-maening-of-puff-adder%e2%80%8b">7.
+                                            what the maening of puff adder​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-type-of-clues-puff-adder-%e2%80%8b">8.
+                                            What Type of clues puff adder ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#to-form-a-hamming-code-how-many-additional-bits-are-needed-for-1100010101100%e2%80%8b">9.
+                                            To form a hamming code, how many additional bits are needed for 1100010101100​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-meaning-of-adders">10.
+                                            what is the meaning of adders</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-type-of-clue-of-puff-adder">11.
+                                            What is the type of clue of puff adder?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#suppose-we-are-working-with-an-error-correcting-code-that-will-allow-a-single-bit-errors-to-be-corrected-for-memory-words-of-length-12-we-have-already-calculated-that-we-need-5-check-bits-and-the-le">12.
+                                            Suppose we are working with an error-correcting code that will allow a single bit errors to be corrected for memory words of length 12. we have already calculated that we need 5 check bits, and the length of all code words will be 17. code words are created according to the hamming algorithm. we now receive the following codeword 00101111001000011. is this a legal code word</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-difference-between-a-full-adder-and-a-half-adder">13.
+                                            What is the difference between a full-adder and a half-adder?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#assign-the-proper-odd-parity-bit-to-the-code-111001">14.
+                                            Assign the proper odd parity bit to the code 111001</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#____use-binary-codes-to-represent-and-interpret-lettersnumbers-and-special-character-with-bits%e2%80%8b">15.
+                                            ____use binary codes to represent and interpret letters,numbers and special character  with bits?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#using-the-hamming-code-determine-whether-the-following-code-011011011110-is-valid-if-it-is-not-determine-what-bit-is-incorrect-and-make-the-correction">16.
+                                            Using the Hamming code, determine whether the following code, 011011011110 is valid. If it is not, determine what bit is incorrect and make the correction.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#implement-a-full-adder-circuit-with-2-half-adders-using-xorgate-and-and-gate-and-an-or-gate">17.
+                                            Implement a full adder circuit with 2 half adders (using XOR
+gate and AND gate) and an OR gate.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#plsss-help-adders-people%e2%80%8b">18.
+                                            plsss help adders people​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-meanings-of-puff-adder%e2%80%8b">19.
+                                            what is The meanings of puff adder​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#__________-type-of-computers-used-the-8-bits-code-called-ebcdic-a-minicomputerb-microcomputerc-mainframe-computerd-supercomputer">20.
+                                            __________ type of computers used the 8 bits code called EBCDIC.
+a. Minicomputer
+b. Microcomputer
+c. Mainframe computer
+d. Supercomputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-meaning-of-puff-adder%e2%80%8b">21.
+                                            what is the meaning of puff adder​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-have-you-learned-in-the-topic-of-bits-and-bytes-in-the-binary-codes-%e2%80%8b">22.
+                                            what have you learned in the topic of bits and bytes in the binary codes? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#meaning-of-puff-adder%e2%80%8b">23.
+                                            meaning of puff adder​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#meaning-of-puff-adder%e2%80%8b">24.
+                                            meaning of puff. adder​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-how-many-bits-do-a-byte-havea-4-bitsb-8-bitsc-8-bitsd-1024-bits%e2%80%8b">25.
+                                            7. How many bits do a byte have?A. 4 bitsB. 8 bitsC. 8 bitsD. 1024 bits​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#using-the-hamming-code-determine-whether-the-following-code-011011011110-is-valid-if-it-is-not-determine-what-bit-is-incorrect-and-make-the-correction-%e2%80%8b">26.
+                                            Using the Hamming code, determine whether the following code, 011011011110 is valid. If it is not, determine what bit is incorrect and make the correction.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-series-of-8-bit-is-referred-to-as-____-which-most-computer-coding-scheme-used-to-represent-each-number-letter-or-symbol%e2%80%8b">27.
+                                            a series of 8 bit is referred to as ____ which most computer coding scheme used to represent each number, letter or symbol​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#computers-used-binary-codes-to-represent-and-interpret-___-___-and-___%e2%80%8b-with-bits">28.
+                                            Computers used binary codes to represent and interpret ___, ___ and ___​ with bits</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-clues-of-puff-adder-%e2%80%8b">29.
+                                            what is the clues of puff adder?? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-many-bcd-code-bits-and-how-many-straight-binary-bits-would-be-required-to-represent-the-decimal-number-643">30.
+                                            How many bcd code bits and how many straight binary bits would be required to represent the decimal number 643</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="verilog-code-for-8-bit-addersubtractor">
+                            1. verilog code for 8-bit adder/subtractor</h2><br />
+                        <p><strong>Answer:</strong></p><p>Verilog code is provided for almost all of the designs, ... Next, we will combine two 4-bit adders to produce an 8-bit adder. Finally ... Designing an 8-bit Adder- Subtractor.</p><p><strong>Explanation:</strong></p><p>:) Sana makatulung</p><br />
+                                            <h2 class="ez-toc-section" id="an-adder-in-which-the-bits-of-the-operands-are-added-one-after-another-isa-serial-adderb-half-adderc-full-adderd-none-of-the-above%e2%80%8b">
+                            2. An adder in which the bits of the operands are added one after another is(A) Serial adder(B) Half-adder(C) Full-adder(D) None of the above​</h2><br />
+                        <p></p><p>[tex]\huge\bold\color{black}\rm{\colorbox{hotpink}{\:ANSWER}}[/tex]</p><p></p><p>An adder in which the bits of the operands are added one after another is</p><p></p>(A) Serial adder<p></p><p>(B) Half-adder</p><p></p><p>(C) Full-adder</p><p></p><p>(D) None of the above</p><p></p><p>An adder in which the bits of the operands are added one after another is Serial adder</p><p><strong>Explanation:</strong></p><p>✏️ HOPE IT'S HELP</p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="1-program-execution-time-would-be-minimum-if-the-programs-are-written-ina-assembly-languageb-high-level-languagec-machine-languaged-none-of-the-above2-a-program-used-to-detect-overall-system">
+                            3. 1.)Program execution time would be minimum if the programs are written in(A) Assembly language(B) High level language(C) Machine language(D) None of the above2.)A program used to detect overall system malfunction is(A) System diagnostics(B) Utilities(C) System analysis(D) System software3.)An adder in which the bits of the operands are added one after another is(A) Serial adder(B) Half-adder(C) Full-adder(D) None of the above​</h2><br />
+                        <p></p><p>[tex]\huge\red{\overbrace{\underbrace{\tt\blue{\:\:\:\:\:\:\:\:ANSWER\:\:\:\:\:\:\:\:}}}}[/tex]</p><p></p><p>1.)Program execution time would be minimum if the programs are written in</p><p></p><p>(A) Assembly language</p><p></p><p>(B) High level language</p><p></p>(C) Machine language<p></p><p>(D) None of the above</p><p></p>➤Program execution time would be minimum if the programs are written in Machine language<p></p><p></p><p>2.)A program used to detect overall system malfunction is</p><p></p>(A) System diagnostics<p></p><p>(B) Utilities</p><p></p><p>(C) System analysis</p><p></p><p>(D) System software</p><p></p>➤A program used to detect overall system malfunction is System diagnostics<p></p><p>3.)An adder in which the bits of the operands are added one after another is</p><p></p>(A) Serial adder<p></p><p>(B) Half-adder</p><p></p><p>(C) Full-adder</p><p></p><p>(D) None of the above</p><p></p>➤An adder in which the bits of the operands are added one after another is Serial adder.<p><strong>Explanation:</strong></p><p>✏️ HOPE IT'S HELP</p><p>#CarryOnLearning</p><p></p><p>[tex]\begin{gathered}\tiny\boxed{ \begin{array}{} \red{ \bowtie} \: \: \: \: \: \: \: \: \red{ \bowtie}\\ \fcolorbox{color}{hotpink}{ \tt{} &gt; &lt; }\\ \: \smile \end{array}}\end{gathered}[/tex]</p><p></p><p><strong>Answer:</strong></p><p>[tex]\huge\red{\boxed{{\colorbox{pink}{ ANSWER :}}}}[/tex]</p><p>1.)Program execution time would be minimum if the programs are written in</p>[tex]{\rm\pink{(c) machine  \: language }}[/tex]<p></p><p>2.)A program used to detect overall system malfunction is</p>[tex]{\rm\pink{ (A) System  \: diagnosis }}[/tex]<p></p><p>3.)An adder in which the bits of the operands are added one after another is</p>[tex]{\rm\pink{ (A) Serial \:  adder }}[/tex]<p><strong>Explanation:</strong></p><p><strong>Hope </strong><strong>it </strong><strong>helps </strong><strong>you</strong><strong>! </strong></p><p></p><p><strong>#</strong><strong>CarryOnLearning </strong></p><p></p><p><strong>[tex]\boxed{\begin{array}{}{{\rm\red{ʕ•ᴥ•ʔ}}}\end{array}}[/tex]</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-meaning-of-puff-adder%e2%80%8b">
+                            4. what is the meaning of puff adder?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>a large, sluggish, mainly nocturnal African viper that inflates the upper part of its body and hisses loudly in threat.</p><p><strong>Answer:</strong></p><p>a poisonous African snake that swells to a larger size when it is attacked</p><p></p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="to-form-a-hamming-code-how-many-additional-bits-are-needed-for-1100010101100%e2%80%8b">
+                            5. To form a hamming code, how many additional bits are needed for 1100010101100​</h2><br />
+                        <p><strong>Answer:</strong></p><p>secret para bibo</p><p><strong>Step-by-step explanation:</strong></p><p>secret lagehh</p><br />
+                                            <h2 class="ez-toc-section" id="it-is-commonly-used-as-code-in-computers-to-represent-and-interpret-letter-numbers-and-special-characters-with-bits%e2%80%8b">
+                            6. it is commonly used as code in computers to represent and interpret letter, numbers, and special characters with bits​</h2><br />
+                        <p><strong>Answer:</strong></p><p>AC||</p><p><strong>Explanation:</strong></p><p>AC||, abbreviation of American Standard Code for information interchange, a standard data-transmission code that is used by smaller and less-powerful computers to represent both textual data(letters, numbers and punctuation marks) and noniput-device commands(control characters) </p><br />
+                                            <h2 class="ez-toc-section" id="what-the-maening-of-puff-adder%e2%80%8b">
+                            7. what the maening of puff adder​</h2><br />
+                        <p><strong>Answer:</strong></p><p>I don't now for now po pls Hindi kupa Alam </p><p><strong>Answer:</strong></p><p>puff adder</p><p><strong>Explanation:</strong></p><p>:a large thick bodied exceedingly venomous widely distributed african viper(bitis arientans) that inflatesits body and hisseles loudly when distured also:a similar samaller snake(b.</p><br />
+                                            <h2 class="ez-toc-section" id="what-type-of-clues-puff-adder-%e2%80%8b">
+                            8. What Type of clues puff adder ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>synonym</p><p><strong>Explanation:</strong></p><p> A dictionary of synonyms and antonyms (or opposites), such as Thesaurus.com, is called a thesaurus</p><br />
+                                            <h2 class="ez-toc-section" id="to-form-a-hamming-code-how-many-additional-bits-are-needed-for-1100010101100%e2%80%8b">
+                            9. To form a hamming code, how many additional bits are needed for 1100010101100​</h2><br />
+                        <p>54382058234248514392827</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-meaning-of-adders">
+                            10. what is the meaning of adders</h2><br />
+                        <p><strong>Explanation:</strong></p><p>which material absorb water</p><p></p><p></p><p><strong>Answer:</strong></p><p>Others- a person or thing that is different or distinct from one already mentioned or known about.
+</p><p>"a language unrelated to any other"</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-type-of-clue-of-puff-adder">
+                            11. What is the type of clue of puff adder?</h2><br />
+                        <p><strong>Answer:</strong></p><p>a large thick-bodied extremely venomous african viper</p><p>(bitis arietans)</p><p><strong>Explanation:</strong></p><p>hope naka tulong</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="suppose-we-are-working-with-an-error-correcting-code-that-will-allow-a-single-bit-errors-to-be-corrected-for-memory-words-of-length-12-we-have-already-calculated-that-we-need-5-check-bits-and-the-le">
+                            12. Suppose we are working with an error-correcting code that will allow a single bit errors to be corrected for memory words of length 12. we have already calculated that we need 5 check bits, and the length of all code words will be 17. code words are created according to the hamming algorithm. we now receive the following codeword 00101111001000011. is this a legal code word</h2><br />
+                        <p><strong>Answer:</strong></p><p>ang haba naman yan</p><p></p><p><strong>Explanation:</strong></p><p>d ko gets</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-difference-between-a-full-adder-and-a-half-adder">
+                            13. What is the difference between a full-adder and a half-adder?</h2><br />
+                        <p>A Half Adder consists of only one AND gate and EX-OR gate. A Full Adder consists of one OR gate and two EX-OR and AND gates. There are two inputs in a Half Adder- A and B. There are a total of three inputs in a Full Adder- A. B.</p><br />
+                                            <h2 class="ez-toc-section" id="assign-the-proper-odd-parity-bit-to-the-code-111001">
+                            14. Assign the proper odd parity bit to the code 111001</h2><br />
+                        <p><strong>Answer:</strong></p><p>¹¹¹00¹ searh this link gahabol.com</p><br />
+                                            <h2 class="ez-toc-section" id="____use-binary-codes-to-represent-and-interpret-lettersnumbers-and-special-character-with-bits%e2%80%8b">
+                            15. ____use binary codes to represent and interpret letters,numbers and special character  with bits?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A computer uses binary vodes to represent and interpret letters, numbers, and special characters with bits.</p><br />
+                                            <h2 class="ez-toc-section" id="using-the-hamming-code-determine-whether-the-following-code-011011011110-is-valid-if-it-is-not-determine-what-bit-is-incorrect-and-make-the-correction">
+                            16. Using the Hamming code, determine whether the following code, 011011011110 is valid. If it is not, determine what bit is incorrect and make the correction.</h2><br />
+                        <p><strong>Answer:</strong></p><p>the harming for determining whether the following in the determination of the axon in the future of the sea that and you are not to same position similarly difference pollutions with fine from the position different position coordinates important that metric</p><p><strong>Step-by-step explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="implement-a-full-adder-circuit-with-2-half-adders-using-xorgate-and-and-gate-and-an-or-gate">
+                            17. Implement a full adder circuit with 2 half adders (using XOR
+gate and AND gate) and an OR gate.</h2><br />
+                        <p><strong>Answer:</strong></p><p>good evening thank you for points good bless</p><br />
+                                            <h2 class="ez-toc-section" id="plsss-help-adders-people%e2%80%8b">
+                            18. plsss help adders people​</h2><br />
+                        <p><strong>Answer:</strong></p><p>madali lang ito gawin mo ito with math, calculation,and a protractor calculation</p><p>another pong module yan parang nagawa ko na kasi yan</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-meanings-of-puff-adder%e2%80%8b">
+                            19. what is The meanings of puff adder​</h2><br />
+                        <p>A large, sluggish, mainly nocturnal African viper that inflates the upper part of its body and hisses loudly in threat.</p><p>Eastern hognose snakes (Heterodon platirhinos), found in the eastern United States, are sometimes called puff adders because when confronted, they puff up the skin around their heads like a cobra, hiss and lunge, according to the Savannah River Ecology Laboratory.</p><p>A puff adder bite can kill a human in about 30 minutes or destroy a limb, but quick thinking by a fellow hiker and the park's conservation manager saved Edwards's life.</p><p></p><p>I hope this helps you, i'm still not done with my module </p><br />
+                                            <h2 class="ez-toc-section" id="__________-type-of-computers-used-the-8-bits-code-called-ebcdic-a-minicomputerb-microcomputerc-mainframe-computerd-supercomputer">
+                            20. __________ type of computers used the 8 bits code called EBCDIC.
+a. Minicomputer
+b. Microcomputer
+c. Mainframe computer
+d. Supercomputer</h2><br />
+                        <p><strong>Answer:</strong></p><p>C. Mainframe computer</p><p><strong>Explanation:</strong></p><p></p><p><strong>Answer:</strong></p><p>correct option is C</p><p><strong>Explanation:</strong></p><p>hope it's help </p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-meaning-of-puff-adder%e2%80%8b">
+                            21. what is the meaning of puff adder​</h2><br />
+                        a large, sluggish, mainly nocturnal African viper that inflates the upper part of its body and hisses loudly in threat.<br /><br />I’m right?<br />
+                                            <h2 class="ez-toc-section" id="what-have-you-learned-in-the-topic-of-bits-and-bytes-in-the-binary-codes-%e2%80%8b">
+                            22. what have you learned in the topic of bits and bytes in the binary codes? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>how the computer works and communicate to other hardwares</p><p><strong>Explanation:</strong></p><p>how the computer works by some binary codes</p><br />
+                                            <h2 class="ez-toc-section" id="meaning-of-puff-adder%e2%80%8b">
+                            23. meaning of puff adder​</h2><br />
+                        <p>a large, sluggish, mainly nocturnal African viper that inflates the upper part of its body and hisses loudly in threat.</p><br />
+                                            <h2 class="ez-toc-section" id="meaning-of-puff-adder%e2%80%8b">
+                            24. meaning of puff. adder​</h2><br />
+                        <p>Answer:</p><p>a large, sluggish, mainly nocturnal African viper that inflates the upper part of its body and hisses loudly in threat.</p><p></p><p>Explanation:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="7-how-many-bits-do-a-byte-havea-4-bitsb-8-bitsc-8-bitsd-1024-bits%e2%80%8b">
+                            25. 7. How many bits do a byte have?A. 4 bitsB. 8 bitsC. 8 bitsD. 1024 bits​</h2><br />
+                        <p><strong>Answer:</strong></p><p>B.  8 bits</p><p><strong>Explanation:</strong></p><p>yan po ang napag aralan namin sa IT</p><br />
+                                            <h2 class="ez-toc-section" id="using-the-hamming-code-determine-whether-the-following-code-011011011110-is-valid-if-it-is-not-determine-what-bit-is-incorrect-and-make-the-correction-%e2%80%8b">
+                            26. Using the Hamming code, determine whether the following code, 011011011110 is valid. If it is not, determine what bit is incorrect and make the correction.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>88 p0</p><p><strong>Step-by-step explanation:</strong></p>un po sagot ko...and that my answer<br />
+                                            <h2 class="ez-toc-section" id="a-series-of-8-bit-is-referred-to-as-____-which-most-computer-coding-scheme-used-to-represent-each-number-letter-or-symbol%e2%80%8b">
+                            27. a series of 8 bit is referred to as ____ which most computer coding scheme used to represent each number, letter or symbol​</h2><br />
+                        <p><strong>Answer:</strong></p><p>a series of 8 bit is referred to as <strong>binary</strong> which most computer coding scheme used to represent each number, letter or symbol</p><br />
+                                            <h2 class="ez-toc-section" id="computers-used-binary-codes-to-represent-and-interpret-___-___-and-___%e2%80%8b-with-bits">
+                            28. Computers used binary codes to represent and interpret ___, ___ and ___​ with bits</h2><br />
+                        <p><strong>Answer:</strong></p><p>Computers used binary codes to represent and interpret text, computer processor instructions and any other data with bits</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-clues-of-puff-adder-%e2%80%8b">
+                            29. what is the clues of puff adder?? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>synonym</p><p><strong>Explanation:</strong></p><p>someone saw it on key correction</p><br />
+                                            <h2 class="ez-toc-section" id="how-many-bcd-code-bits-and-how-many-straight-binary-bits-would-be-required-to-represent-the-decimal-number-643">
+                            30. How many bcd code bits and how many straight binary bits would be required to represent the decimal number 643</h2><br />
+                        Answer:<strong>12 BCD-coded bits, 10 straight binary bits</strong><p></p><strong>Explanation:</strong><p>[tex]643_{10}[/tex] can be converted to BCD by following the conversion equivalent below:</p><p>Decimal = BCD</p><p>0 = 000</p><p>1 = 0001</p><p>2 = 0010</p><p>3 = 0011</p><p>4 = 0100</p><p>5 = 0101</p><p>6 = 0110</p><p>7 = 0111</p><p>8 = 1000</p><p>9 = 1001</p><p></p><p>From the conversion equivalent above, [tex]3_{10}[/tex] is equal to 0011, [tex]4_{10}[/tex] is equal to 0100, and [tex]6_{10}[/tex] is equal to 0110. Now, we can combine them. [tex]643_{10} = 011001000011_{BCD}[/tex]</p><p>We need to count the BCD-coded bits. Since each number has 4 bits, we multiply it by the number of digits which is 3, to get the total number of <strong>12 BCD-coded bits</strong>.</p><p></p><p>[tex]643_{10}[/tex] will be converted to binary using the procedures below:</p><p>643 ÷ 2 = 321              remainder         1</p><p>321 ÷ 2 = 160               remainder         1</p><p>160 ÷ 2 = 80                remainder         0</p><p>80  ÷ 2 = 40                remainder         0</p><p>40  ÷ 2 = 20                remainder         0</p><p>20  ÷ 2 = 10                 remainder         0</p><p>10  ÷ 2 = 5                   remainder         0</p><p>5 ÷ 2 = 2                      remainder         1</p><p>2 ÷ 2 = 1                      remainder         0               </p><p>1 ÷ 2 = 0                      remainder         1</p><p></p><p>Reading it from the lower part to the top part, we get [tex]1010000011_{2}[/tex]</p><p></p><p>We must count the bits of the binary [tex]1010000011_{2}[/tex] which gives us <strong>10 straight binary bits.</strong></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/a4os8mQ94Bs?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>computer_science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/a-s-speedway.html">A s Speedway</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/pagkamaka-tao.html">Pagkamaka Tao</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/st-michael-s-medical-center-caloocan-branch.html">St Michael s Medical Center Caloocan Branch</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/grace-goodell-s-skill-ladder.html">Grace Goodell s Skill Ladder</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/epekto-ng-pre-marital.html">Epekto Ng Pre Marital</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/boyle-s-law-worksheet.html">Boyle s Law Worksheet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/aveyond-ean-s-quest-walkthrough.html">Aveyond Ean s Quest Walkthrough</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/tdco-pnp.html">Tdco Pnp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/malumagpak-falls.html">Malumagpak Falls</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/coa-documentary-requirements.html">Coa Documentary Requirements</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/mga-suliranin-sa-komunidad.html">Mga Suliranin Sa Komunidad</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/exultet-lyrics.html">Exultet Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/sodium-hyaluronate-hialid.html">Sodium Hyaluronate Hialid</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/hinilawod-full-story-tagalog.html">Hinilawod Full Story Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/application-letter-for-applying-police.html">Application Letter For Applying Police</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/pagsang-ayon-at-pagsalungat-halimbawa.html">Pagsang Ayon At Pagsalungat Halimbawa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/lagom-konklusyon-at-rekomendasyon.html">Lagom Konklusyon At Rekomendasyon</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/halimbawa-ng-konkreto.html">Halimbawa Ng Konkreto</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/victors-nightmares.html">Victors Nightmares</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/cross-hatching-jar.html">Cross Hatching Jar</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pingstudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pingstudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

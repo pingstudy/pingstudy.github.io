@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traffic Light Controller Using Verilog Code - QnA</title>
+    <meta name="description" content="Traffic Light Controller Using Verilog Code, , , , , , , 0, Electrical – Traffic Light Verilog Code – Valuable Tech Notes, itecnotes.com, 1111 x 548, png, , 20, traffic-light-controller-using-verilog-code, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Traffic Light Controller Using Verilog Code - QnA" />
+    <meta property="og:description" content="Traffic Light Controller Using Verilog Code, , , , , , , 0, Electrical – Traffic Light Verilog Code – Valuable Tech Notes, itecnotes.com, 1111 x 548, png, , 20, traffic-light-controller-using-verilog-code, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Traffic Light Controller Using Verilog Code - QnA" />
+    <meta name="twitter:description" content="Traffic Light Controller Using Verilog Code, , , , , , , 0, Electrical – Traffic Light Verilog Code – Valuable Tech Notes, itecnotes.com, 1111 x 548, png, , 20, traffic-light-controller-using-verilog-code, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pingstudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pingstudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pingstudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pingstudy.github.io">Home</a></li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pingstudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Traffic Light Controller Using Verilog Code</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">1899estav</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Traffic+Light+Controller+Using+Verilog+Code" alt="Traffic Light Controller Using Verilog Code">
+                    </div>
+                    <p></p>
+                    <p>verilog code for 8-bit adder/subtractor</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#verilog-code-for-8-bit-addersubtractor">1.
+                                            verilog code for 8-bit adder/subtractor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-how-does-christmas-lights-work-is-it-controllable-by-human-or-system2-have-you-experience-creating-a-traffic-lights-without-the-use-of-battery3-why-is-it-you-need-yo-create-a-codes-for-you-to-see">2.
+                                            1. How does Christmas lights work? Is it controllable by human or system?2.Have you experience creating a traffic lights without the use of battery3.Why is it you need yo create a codes for you to see the output​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-how-does-christmas-lights-work-is-it-controllable-by-human-or-system2-have-you-experience-creating-a-traffic-lights-without-the-use-of-batteryyes-or-no3-how-traffic-lights-are-usually-made">3.
+                                            1.How does Christmas lights work? Is it controllable by human or system?2.Have you experience creating a traffic lights without the use of battery?Yes or No3.How traffic lights are usually made?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-traffic-light-in-front-of-steady-stream-of-traffic-keeps-keep-the-movement-of-vehicles-under-control%e2%80%8b">4.
+                                            a traffic light in front of steady stream of traffic (keeps, keep) the movement of vehicles under control​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#to-draw-a-traffic-light-what-shape-do-we-use%e2%80%8b">5.
+                                            To draw a traffic light what shape do we use​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-can-the-traffic-enforcer-use-communication-to-control-or-regulate-behaviour%e2%80%8b">6.
+                                            how can the traffic enforcer use communication to control or regulate behaviour?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#examples-of-personification-using-the-word-traffic-lights%e2%80%8b">7.
+                                            Examples of personification using the word "traffic lights"​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-traffic-control%e2%80%8b">8.
+                                            what is traffic control?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-how-does-christmas-lights-work-is-it-controllable-by-human-or-system2-have-you-experience-creating-a-traffic-lights-without-the-use-of-batteryyes-or-no3-how-traffic-lights-are-usually-madenonsen">9.
+                                            1.How does Christmas lights work? Is it controllable by human or system?2.Have you experience creating a traffic lights without the use of battery?Yes or No3.How traffic lights are usually made?NONSENSE - REPORT​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-importance-of-traffic-control-%e2%80%8b">10.
+                                            WHAT IS THE IMPORTANCE OF TRAFFIC CONTROL.?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-is-a-correct-complex-sentence-that-shows-problem-and-solution-a-the-implementation-of-number-coding-is-one-solution-to-traffic-problem-b-the-traffic-problem-in-the-city-worsens-thats-why-mmd">11.
+                                            Which is a correct complex sentence that shows problem and solution.a) The implementation of number coding is one solution to traffic problem. b) The traffic problem in the city worsens that's why MMDA implements number coding. c) The traffic problem worsens so there is number coding. d) The implementation of number coding is because of traffic problem.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-she-called-the-lonely-traffic-light-why-is-she-called-the-lonely-traffic-light-%e2%80%8b">12.
+                                            why is she called the lonely traffic light? why is she called the lonely traffic light ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-traffic-light-in-front-of-steady-streams-of-traffic-keeps-the-movement-of-vehicles-under-control-singular-or-plural%e2%80%8b">13.
+                                            A traffic light in front of steady streams of traffic keeps the movement of vehicles under control Singular or plural?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-how-does-traffic-lights-work-is-is-controllable-by-human-or-system2-have-you-experienced-lighting-a-led-without-the-use-of-battery3-how-computers-are-usually-interconnected4-how-important-is">14.
+                                            1. How does traffic lights work? Is is controllable by human or system?2. Have you experienced lighting a LED without the use of Battery?3. How computers are usually interconnected?4. How important is Arduino Software in ICT? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-do-colors-red-yellowand-green-are-used-in-traffic-lights">15.
+                                            Why do colors red, yellow,and green are used in traffic lights</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#write-a-traffic-light-program-using-javascript-%e2%80%8b">16.
+                                            write a traffic light program using JavaScript ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#have-you-experienced-creating-a-traffic-light-without-the-use-of-battery%e2%80%8b">17.
+                                            have you experienced creating a traffic light without the use of battery?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-why-do-colors-red-yellow-and-green-are-used-in-traffic-lights%e2%80%8b">18.
+                                            1. Why do colors red, yellow, and green are used in traffic lights?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#differentiate-traffic-direction-from-traffic-control-%e2%80%8b">19.
+                                            Differentiate Traffic Direction from Traffic Control.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#traffic-light-can-use-the-natural-light-of-the-sun">20.
+                                            Traffic light can use the natural light of the sun</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-do-we-use-red-green-and-orange-in-a-traffic-light">21.
+                                            why do we use red green and orange in a traffic light?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#create-a-sentence-using-modals-base-on-traffic-light%e2%80%8b">22.
+                                            Create a sentence using modals base on Traffic light​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#he-type-of-mirror-used-in-traffic-safety-lights-is-called">23.
+                                            He type of mirror used in traffic safety lights is called</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#you____stop-when-the-traffic-lights-turn-red-what-appropriate-modal-to-be-used%e2%80%8b">24.
+                                            You____stop when the traffic lights turn red. what appropriate modal to be used​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#street-without-traffic-light-and-street-with-traffic-light%e2%80%8b">25.
+                                            street without traffic light and street with traffic light​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#different-traffic-direction-from-traffic-control">26.
+                                            different traffic direction from traffic control</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#traffic-enforcers-vs-traffic-light%e2%80%8b">27.
+                                            Traffic Enforcers vs Traffic Light​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-do-colors-red-yellow-and-green-are-used-in-traffic-lights">28.
+                                            Why do colors red, yellow, and green are used in traffic lights?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-does-traffic-lights-workis-it-controllable-by-human-or-system">29.
+                                            how does traffic lights work?
+is it controllable by human or system?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#valuingtraffic-lightsdirections-using-the-traffic-lights-describe-your-level-of-understanding-about-manicure-and-pedicureits-origin-and-tyoes-explain-your-answer-briefly%e2%80%8b">30.
+                                            VALUINGTraffic lightsDirections: Using the traffic lights describe your level of  understanding about manicure and pedicure,it's origin and tyoes.Explain your answer briefly​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="verilog-code-for-8-bit-addersubtractor">
+                            1. verilog code for 8-bit adder/subtractor</h2><br />
+                        <p><strong>Answer:</strong></p><p>Verilog code is provided for almost all of the designs, ... Next, we will combine two 4-bit adders to produce an 8-bit adder. Finally ... Designing an 8-bit Adder- Subtractor.</p><p><strong>Explanation:</strong></p><p>:) Sana makatulung</p><br />
+                                            <h2 class="ez-toc-section" id="1-how-does-christmas-lights-work-is-it-controllable-by-human-or-system2-have-you-experience-creating-a-traffic-lights-without-the-use-of-battery3-why-is-it-you-need-yo-create-a-codes-for-you-to-see">
+                            2. 1. How does Christmas lights work? Is it controllable by human or system?2.Have you experience creating a traffic lights without the use of battery3.Why is it you need yo create a codes for you to see the output​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Christmas lights actually works by system but without a human it can't totally work,so humans also control it.(I guess)</p><p></p><p>2. I tried but at the same time I failed.</p><p></p><p>3. I think it's made of system,but like I also think that some human control it.(I'm not that sure though)</p><p></p><p></p><p><strong>Answer:</strong></p><p>1.</p><p>In a simple circuit, including one in an incandescent light bulb, electricity travels through a closed circuit, passing over a filament, causing it to glow brightly. The more current that passes over a filament, the hotter it will get, the brighter it will burn, and the quicker it will burn out.</p><p>Christmas Lights actually works by system but without a human it can't totally work, so humans also control it.</p><p></p><p>2.</p><p>No po answer ko </p><p></p><p>3.</p><p>Simply because codes are instructions of what the program will do </p><p></p><p>SANA MAKATULONG  YAN PO MGA ANSWER KO SA MODULE KO</p><p>  </p><br />
+                                            <h2 class="ez-toc-section" id="1-how-does-christmas-lights-work-is-it-controllable-by-human-or-system2-have-you-experience-creating-a-traffic-lights-without-the-use-of-batteryyes-or-no3-how-traffic-lights-are-usually-made">
+                            3. 1.How does Christmas lights work? Is it controllable by human or system?2.Have you experience creating a traffic lights without the use of battery?Yes or No3.How traffic lights are usually made?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1 its of course controlled by system because no human can control elctricity</p><p>2 yes you will use some solar panels</p><p>3.The housing or body of each signal light stack is usually made of corrosion-resistant aluminum. Some housings are made of molded polypropylene plastic. The lens for each light is made of tinted glass or plastic. The bulb, known as the lamp, is designed for long life.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-traffic-light-in-front-of-steady-stream-of-traffic-keeps-keep-the-movement-of-vehicles-under-control%e2%80%8b">
+                            4. a traffic light in front of steady stream of traffic (keeps, keep) the movement of vehicles under control​</h2><br />
+                        <p><strong>Answer:</strong></p><p>keeps</p><p><strong>Explanation:</strong></p><p>A traffic light in front of steady stream of traffic <strong>keeps</strong> the movement of vehicles under control.</p><p></p><p>hope it helps :)</p><p>​</p><br />
+                                            <h2 class="ez-toc-section" id="to-draw-a-traffic-light-what-shape-do-we-use%e2%80%8b">
+                            5. To draw a traffic light what shape do we use​</h2><br />
+                        <p><strong>Answer:</strong></p><p>circle ⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕ on a</p><br />
+                                            <h2 class="ez-toc-section" id="how-can-the-traffic-enforcer-use-communication-to-control-or-regulate-behaviour%e2%80%8b">
+                            6. how can the traffic enforcer use communication to control or regulate behaviour?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.using the stop/go sign,hand sign, or whistle. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="examples-of-personification-using-the-word-traffic-lights%e2%80%8b">
+                            7. Examples of personification using the word "traffic lights"​</h2><br />
+                        <p><strong>1) Cross with care at the traffic lights. </strong></p><p><strong>2) The car stopped at the traffic lights. </strong></p><p><strong>3) There are temporary traffic lights because of the roadworks. </strong></p><p><strong>4) Cross over at the traffic lights, where the road is safe</strong></p><p></p><p><strong>Answer:</strong></p><p></p><p>The shining red traffic light mockingly smiled at me as I, stuck in a traffic ranted and raved.</p><p></p><p></p><p>Hope ot helps please brainliest me if it does!</p><p><strong>#</strong><strong>keeponlearning</strong><strong>!</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-traffic-control%e2%80%8b">
+                            8. what is traffic control?​</h2><br />
+                        <p><strong>Answer:</strong></p>What is traffic control?​<p></p><p>traffic control, supervision of the movement of people, goods, or vehicles to ensure efficiency and safety.
+</p><p>
+</p><p>Traffic is the movement of people and goods from one location to another. The movement typically occurs along a specific facility or pathway that can be called a guideway. It may be a physical guideway, as in the case of a railroad, or it may be an agreed-upon or designated route, marked either electronically (as in aviation) or geographically (as in the maritime industry). Movement—excepting pedestrian movement, which only requires human power—involves a vehicle of some type that can serve for people, goods, or both. Vehicle types, often referred to as modes of transportation, can be broadly characterized as road, rail, air, and maritime (i.e., water-based).
+</p><p>
+</p><p>Traffic evolves because of a need to move people and goods from one location to another. As such, the movement is initiated because of decisions made by people to transport themselves or others from one location to another to participate in activities at that second location or to move goods to a location where they have higher value. Traffic flows thus differ fundamentally from other areas of engineering and the physical sciences (such as the movement of electrons in a wire), because they are primarily governed and determined by laws of human behaviour. While physical attributes are critical in the operation of all modes (e.g., to keep airplanes in the air), the demand or need to travel that gives rise to traffic is derived from the desire to change locations.</p><p><strong>Explanation:</strong></p><p>Hope it helps</p><p>Pls Pa Brainliest</p><p>Thank you</p><br />
+                                            <h2 class="ez-toc-section" id="1-how-does-christmas-lights-work-is-it-controllable-by-human-or-system2-have-you-experience-creating-a-traffic-lights-without-the-use-of-batteryyes-or-no3-how-traffic-lights-are-usually-madenonsen">
+                            9. 1.How does Christmas lights work? Is it controllable by human or system?2.Have you experience creating a traffic lights without the use of battery?Yes or No3.How traffic lights are usually made?NONSENSE - REPORT​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Christmas lights actually works by system but without a human it can't totally work,so humans also control it.(I guess)</p><p></p><p>2. I tried but at the same time I failed.</p><p></p><p>3. I think it's made of system,but like I also think that some human control it.(I'm not that sure though)</p><p></p><p><strong>Explanation:</strong></p><p></p><p>Nag isip pako neto eh samantalang naka latag lng yung modules ko dito  </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-importance-of-traffic-control-%e2%80%8b">
+                            10. WHAT IS THE IMPORTANCE OF TRAFFIC CONTROL.?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Ensures Safety of Drivers, Passengers, and Pedestrians. The number one reason for traffic control systems is to ensure the safety of those around or in traffic.
+</p><p>Organizes Traffic Movement and Order. Where there is an intersection of traffic, traffic control devices need to be present to direct the vehicles.
+</p><p>Reduce Severity of Accidents.</p><p></p><p>Good afternoon keep safe Good luck</p><p></p><p><strong>Answer:</strong></p><p>Traffic control can be utilized to deal with the movement and development of cars and other sorts of transportation framework. Without traffic control, these vehicles will be unable to move from one place to another with ease. When that happens, accidents would unavoidably occur.</p><p><strong>Explanation:</strong></p><p>traffic control, supervision of the movement of people, goods, or vehicles to ensure efficiency and safety.</p><br />
+                                            <h2 class="ez-toc-section" id="which-is-a-correct-complex-sentence-that-shows-problem-and-solution-a-the-implementation-of-number-coding-is-one-solution-to-traffic-problem-b-the-traffic-problem-in-the-city-worsens-thats-why-mmd">
+                            11. Which is a correct complex sentence that shows problem and solution.a) The implementation of number coding is one solution to traffic problem. b) The traffic problem in the city worsens that's why MMDA implements number coding. c) The traffic problem worsens so there is number coding. d) The implementation of number coding is because of traffic problem.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>B</p><p><strong>Explanation:</strong></p><p>Problem first before solution</p><p></p><p>Stream Peaches by Kai</p><br />
+                                            <h2 class="ez-toc-section" id="why-is-she-called-the-lonely-traffic-light-why-is-she-called-the-lonely-traffic-light-%e2%80%8b">
+                            12. why is she called the lonely traffic light? why is she called the lonely traffic light ​</h2><br />
+                        <p><strong>Answer: She feels that nobody cares about her.</strong></p><p></p><p><strong>Explanation: Hope it helps!</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-traffic-light-in-front-of-steady-streams-of-traffic-keeps-the-movement-of-vehicles-under-control-singular-or-plural%e2%80%8b">
+                            13. A traffic light in front of steady streams of traffic keeps the movement of vehicles under control Singular or plural?​</h2><br />
+                        <p>Answer</p><p>Singular</p><p><strong>Explanation:</strong></p><p>I am not sure.. But I think the answer was the Singular..</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-how-does-traffic-lights-work-is-is-controllable-by-human-or-system2-have-you-experienced-lighting-a-led-without-the-use-of-battery3-how-computers-are-usually-interconnected4-how-important-is">
+                            14. 1. How does traffic lights work? Is is controllable by human or system?2. Have you experienced lighting a LED without the use of Battery?3. How computers are usually interconnected?4. How important is Arduino Software in ICT? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Traffic lights are controllable by both humas and system, but most of the Traffic Lights are controlled by systems/ computers. </p><p>2. You can experience lighting an LED without the use of Battery, Example you can use FRICTION to light an LED</p><p>3. By the use of electricity and their wires</p><p>4. Arduino Software is important in ICT to support its software </p><p><strong>Explanation:</strong></p><p>Hope it helps lol :&gt;</p><br />
+                                            <h2 class="ez-toc-section" id="why-do-colors-red-yellowand-green-are-used-in-traffic-lights">
+                            15. Why do colors red, yellow,and green are used in traffic lights</h2><br />
+                        <p><strong>Answer:</strong></p><p>we use the red, yellow and green in the traffic light because those colors had a meaning to use.</p><p>The red mean STOP</p><p>The yellow mean READY</p><p>And the green mean GO</p><p></p><p>#CarryOnLearning</p><p><strong>Explanation:</strong></p><p>Red is an inherited symbol from railroads</p><p>Red symbolizes danger in many cultures, which makes sense, considering it has the longest wavelength of any color on the visible spectrum, meaning you can see it from a greater distance than other colors. With the ironic exception of stop signs (not stop lights, just signs -- more on that in a second), red has meant stop since long before cars existed, with train signals' use of red dating back to the days when mechanical arms lifted and lowered to indicate whether the rail ahead was clear. So that one's simple.</p><p>Green traffic light</p><p></p><p>Green meant "caution" at first</p><p>Green's role in lights has actually changed dramatically over time. Its wavelength is next to (and shorter than) yellow's on the visible spectrum, meaning it's still easier to see than any color other than red and yellow. Back in the early days of railway lights, green originally meant "caution," while the "all-clear" light was, well, clear or white. Trains, of course, take an interminably long time to stop, and legend has it that several disastrous collisions happened after an engineer mistook stars in the night horizon for an all-clear. Thus, green became "go," and for a long time, railways used only green and red to signal trains.</p><p></p><p>Yellow traffic light</p><p>Yellow means "caution" because it's almost as easy to see as red</p><p>From the earliest days of motoring up until the mid-1900s, not all stop signs were red -- many were yellow, along with yield signs, because at night it was all but impossible to see a red stop sign in a poorly lit area. The yellow stop-sign craze began in Detroit in 1915, a city that five years later installed its first electric traffic signal, which happened to include the very first amber traffic light, at the corner of Michigan and Woodward Aves.</p><p>But what of those weird yellow stop signs, you ask? As materials and technologies evolved, the ability to produce highly reflective signs meant that red could resume its natural spot in the sign hierarchy, leaving the still-highly-visible yellow (it's second only to red in terms of visible wavelength) to the domain of "caution." That's why school zones and buses, crosswalks, and other important warnings are yellow today.</p><br />
+                                            <h2 class="ez-toc-section" id="write-a-traffic-light-program-using-javascript-%e2%80%8b">
+                            16. write a traffic light program using JavaScript ​</h2><br />
+                        <p><strong>TRAFFIC LIGHT PROGRAM<br /><br /><br />THE HTML, CSS, AND JS FILE ARE ON THE IMAGES I CAN'T COPY PASTE THEM DUE TO SOME ERRORS</strong></p><br />
+                                            <h2 class="ez-toc-section" id="have-you-experienced-creating-a-traffic-light-without-the-use-of-battery%e2%80%8b">
+                            17. have you experienced creating a traffic light without the use of battery?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Yes, There are a lot of circuits around: Talking Electron CD4050 (Hex non-inverting buffers) is not really necessary but with it's possible to use more than one led per color You will understand the principle Connect a 9V battery and the traffic light is running.</p><p><strong>Explanation:</strong></p><p>Hope it help</p><p>:) Make me brainliest</p><br />
+                                            <h2 class="ez-toc-section" id="1-why-do-colors-red-yellow-and-green-are-used-in-traffic-lights%e2%80%8b">
+                            18. 1. Why do colors red, yellow, and green are used in traffic lights?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The Reason Traffic Lights Are Red, Yellow, and Green</p><p></p><p><strong>Explanation:</strong></p>Red means "<strong>stop</strong>," green means "<strong>go</strong>," and yellow means "<strong>hurry up and make that </strong><strong> light.</strong>" Why those colors, though? Why not blue, purple, and brown? I have to admit that aside from a hunch that it had to do with wavelengths, I had no idea myself, so I decided to look into it.The answer, as it turns out, is a little convoluted, but makes sense. The earliest traffic signals were designed for trains, not cars. They were red and green, gas-powered, and more than a little dangerous in the event of a leak.<p></p><p><strong>Red</strong> is an inherited symbol from railroads</p><p>Red symbolizes <strong>danger</strong> in many cultures</p><p></p><p><strong>Green</strong> meant <strong>"caution"</strong> at first</p><p></p><p><strong>Yellow</strong> means "<strong>caution</strong>" because it's almost as easy to see <strong>as red</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="differentiate-traffic-direction-from-traffic-control-%e2%80%8b">
+                            19. Differentiate Traffic Direction from Traffic Control.​</h2><br />
+                        <p>With the responsibility of traffic direction, you will be assigned to safely expedite the flow of traffic, with the purpose of preventing congestion and providing maximum vehicular movement. Road traffic control involves directing vehicular and pedestrian traffic around a construction zone, accident or other road disruption, thus ensuring the safety of emergency response teams, construction workers and the general public.</p><p></p><p>pabrainliest po</p><br />
+                                            <h2 class="ez-toc-section" id="traffic-light-can-use-the-natural-light-of-the-sun">
+                            20. Traffic light can use the natural light of the sun</h2><br />
+                        <p><strong>Answer:</strong></p><p>Typical incandescent traffic lights use 100-watt or 150-watt bulbs that are operating 24 hours a day, utilizing more than 2.4 kilowatt-hours per day. At 8 cents per kilowatt-hour, one intersection can cost almost $600 per year in electricity.</p><p>Answer:</p><p></p><p>Explanation:</p><p>That is false</p><br />
+                                            <h2 class="ez-toc-section" id="why-do-we-use-red-green-and-orange-in-a-traffic-light">
+                            21. why do we use red green and orange in a traffic light?</h2><br />
+                        <p>They chose red as the color for stop, it is thought, because red has for centuries been used to indicate danger. For the other colors, they chose white as the color for go and green as the color for caution.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="create-a-sentence-using-modals-base-on-traffic-light%e2%80%8b">
+                            22. Create a sentence using modals base on Traffic light​</h2><br />
+                        <p><strong>Answer:</strong></p><p>You must not park here</p><p>You must not stop here</p><p>You can't u-turn here</p><br />
+                                            <h2 class="ez-toc-section" id="he-type-of-mirror-used-in-traffic-safety-lights-is-called">
+                            23. He type of mirror used in traffic safety lights is called</h2><br />
+                        <p><strong>The convex mirror is also used to provide safety for motorists on roads, driveways and in alleys where there is a lack of visibility. A convex mirror is also a simple way of improving the safety in your warehouse or production environment.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="you____stop-when-the-traffic-lights-turn-red-what-appropriate-modal-to-be-used%e2%80%8b">
+                            24. You____stop when the traffic lights turn red. what appropriate modal to be used​</h2><br />
+                        <p>I think the answer is. Should</p><p></p><p></p><p></p><p></p><p>hope this helps</p><p><strong>Answer:</strong></p><p>The answer: Should</p><p>                     Will</p><p></p><p><strong>Explanation:</strong></p><p>Depends on how you will answer or read the sentence</p><br />
+                                            <h2 class="ez-toc-section" id="street-without-traffic-light-and-street-with-traffic-light%e2%80%8b">
+                            25. street without traffic light and street with traffic light​</h2><br />
+                        <p></p><p>[tex] \blue{hiii \: god \: morning} [/tex]</p><p></p><p>No Traffic signals, No speed breakers, No navigations lead to traffic jams, Accidents, and deaths.</p><br />
+                                            <h2 class="ez-toc-section" id="different-traffic-direction-from-traffic-control">
+                            26. different traffic direction from traffic control</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.</p><p>Regulate the flow of traffic. Give priority of movement to the most heavily traveled areas by allowing longer periods of running time. Traffic movements must be of equal and adequate time if the intersecting streets carry an equal traffic volume. Long runs are preferable as they reduce the loss of time from frequent changes of traffic directions.</p><p></p><p>2.</p><p>Control and assist turning vehicles. Supervise all vehicular turns. If traffic is exceptionally heavy or a spillback is caused by another intersection, determine the preference of traffic direction. If turning vehicles increase the amount of congestion, direct traffic to continue straight ahead during the period of the backup.</p><p></p><p><strong>Answer:</strong></p><p>With the responsibility of traffic direction, you will be assigned to safely expedite the flow of traffic, with the purpose of preventing congestion and providing maximum vehicular movement. Road traffic control involves directing vehicular and pedestrian traffic around a construction zone, accident or other road disruption, thus ensuring the safety of emergency response teams, construction workers and the general public.</p><br />
+                                            <h2 class="ez-toc-section" id="traffic-enforcers-vs-traffic-light%e2%80%8b">
+                            27. Traffic Enforcers vs Traffic Light​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Neither the traffic enforcer nor the traffic light will win </p><p><strong>Explanation:</strong></p><p>Because they do the both job</p><br />
+                                            <h2 class="ez-toc-section" id="why-do-colors-red-yellow-and-green-are-used-in-traffic-lights">
+                            28. Why do colors red, yellow, and green are used in traffic lights?</h2><br />
+                        <p><strong>Answer:</strong></p><p>because its simbolyze the traffic rules on the traffic lightsت︎</p><br />
+                                            <h2 class="ez-toc-section" id="how-does-traffic-lights-workis-it-controllable-by-human-or-system">
+                            29. how does traffic lights work?
+is it controllable by human or system?</h2><br />
+                        <p><strong>Answer:</strong></p><p>it's control by human they watch every situation in the road.</p><p><strong>Answer:</strong></p><p>it is controllable by human</p><p><strong>Explanation:</strong></p><p>because with out the help of human the system will not work</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="valuingtraffic-lightsdirections-using-the-traffic-lights-describe-your-level-of-understanding-about-manicure-and-pedicureits-origin-and-tyoes-explain-your-answer-briefly%e2%80%8b">
+                            30. VALUINGTraffic lightsDirections: Using the traffic lights describe your level of  understanding about manicure and pedicure,it's origin and tyoes.Explain your answer briefly​</h2><br />
+                        <p><strong>Answer:</strong></p><p>GREEN LIGHT-GO</p><p>ORANGE LIGHT-SLOW DOWN</p><p>RED LIGHT-STAP TAP TAP</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/DGL3__kQhS4?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>computer_science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/ra-9711-pdf.html">Ra 9711 Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/mga-hugis-at-linya.html">Mga Hugis At Linya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/the-emperor-s-new-sonnet.html">The Emperor s New Sonnet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/4a-s-lesson-plan-in-science.html">4a s Lesson Plan In Science</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/taximan-s-story.html">Taximan s Story</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/counter-strike-global-offensive-download-key.html">Counter Strike Global Offensive Download Key</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/kuya-benjie-s-kubo-and-cottages.html">Kuya Benjie s Kubo And Cottages</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/maritza-mendez-hell-s-kitchen.html">Maritza Mendez Hell s Kitchen</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/affidavit-of-no-employees-philippines.html">Affidavit Of No Employees Philippines</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/pagmimina-meaning.html">Pagmimina Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/ice-cream-production-pdf.html">Ice Cream Production Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/okra-printmaking.html">Okra Printmaking</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/pds-form-download-pdf.html">Pds Form Download Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/example-of-salaysay.html">Example Of Salaysay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/obheto.html">Obheto</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/sa-papaanong-paraan-malulutas-ang-demand-pull-inflation.html">Sa Papaanong Paraan Malulutas Ang Demand Pull Inflation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/ili-ili-lyrics.html">Ili Ili Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/auditing-and-assurance-standards-council.html">Auditing And Assurance Standards Council</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/philippine-contemporary-music-composers-and-their-works.html">Philippine Contemporary Music Composers And Their Works</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/kahulugan-ng-kinalulugdan.html">Kahulugan Ng Kinalulugdan</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pingstudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pingstudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

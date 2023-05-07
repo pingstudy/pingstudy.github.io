@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Base Shear In Staad Pro - QnA</title>
+    <meta name="description" content="Base Shear In Staad Pro, , , , , , , 0, Table 1 from Seismic base shear variation between regular and irregular, www.semanticscholar.org, 1262 x 1450, png, , 20, base-shear-in-staad-pro, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Base Shear In Staad Pro - QnA" />
+    <meta property="og:description" content="Base Shear In Staad Pro, , , , , , , 0, Table 1 from Seismic base shear variation between regular and irregular, www.semanticscholar.org, 1262 x 1450, png, , 20, base-shear-in-staad-pro, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Base Shear In Staad Pro - QnA" />
+    <meta name="twitter:description" content="Base Shear In Staad Pro, , , , , , , 0, Table 1 from Seismic base shear variation between regular and irregular, www.semanticscholar.org, 1262 x 1450, png, , 20, base-shear-in-staad-pro, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pingstudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pingstudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pingstudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pingstudy.github.io">Home</a></li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pingstudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Base Shear In Staad Pro</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">RAVENDAVEEN7824</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Base+Shear+In+Staad+Pro" alt="Base Shear In Staad Pro">
+                    </div>
+                    <p></p>
+                    <p>What is the design base shear allowed by the code g?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-design-base-shear-allowed-by-the-code-g">1.
+                                            What is the design base shear allowed by the code g?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pros-and-cons-of-internet-based-research">2.
+                                            Pros and cons of Internet based research</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-5-standards-based-instruction-in-pros-and-cons-%e2%80%8b">3.
+                                            What are the 5 Standards based instruction in pros and cons ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#based-on-your-own-ideas-explain-the-pros-and-cons-of-online-businesses-%e2%80%8b">4.
+                                            Based on your own ideas, explain the pros and cons of online businesses. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-w24-x-94-beam-is-subjected-to-a-shear-force-of-900kna-compute-the-shear-stress-at-junction-of-flange-and-webb-compute-the-shear-at-neutral-axisc-compute-the-shear-force-carried-by-the-flanged">5.
+                                            A w24 x 94 beam is subjected to a shear force of 900kn
+a. compute the shear stress at junction of flange and web
+b. compute the shear at neutral axis
+c. compute the shear force carried by the flange
+d. compute the shear force carried by the web
+e. compute the average shear stress on web</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#based-on-the-topic-given-write-atleast-one-advantage-and-disadvantage-using-the-pro-con-grid%e2%80%8b">6.
+                                            based on the topic given write atleast one advantage and disadvantage using the pro-con grid​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-5-pros-of-entrepreneurship-base-on-your-learning-and-observation">7.
+                                            Give 5 pros of entrepreneurship base on your learning and observation.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-is-not-a-type-of-shears-a-cutting-shears-b-pinking-shears-c-scalloping-shears-d-zigzag-shears-%e2%80%8b">8.
+                                            Which of the following is not a type of shears?  a cutting shears b pinking shears c scalloping shears d zigzag shears ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pinking-shears-fabric-shears-sewing-shears%e2%80%8b">9.
+                                            pinking shears fabric shears sewing shears​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-is-not-type-of-shears-a-cutting-shears-b-pinking-shearsc-scalloping-shearsd-zigzag-shears%e2%80%8b">10.
+                                            which of the following is not type of shears a. cutting shears b. pinking shearsc. scalloping shearsd. zigzag shears​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-5-pros-of-entrepreneurship-base-on-your-learning-and-observation">11.
+                                            Give 5 PROS of entrepreneurship base on your learning and observation.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#based-on-the-national-security-policy-2017-2022-that-was-previously-deliberated-on-module-3-identify-the-pro-people-and-pro-environment-measure-that-the-government-had-established%e2%80%8bpahelp-po">12.
+                                            based on the national security policy 2017 2022 that was previously deliberated on module 3 identify the pro people and pro-environment measure that the government had established​
+Pahelp po</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#list-down-pros-and-cons-of-using-carbon-based-fuels%e2%80%8b">13.
+                                            List down pros and cons of using Carbon based Fuels​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#based-on-the-approaches-to-research-assess-the-pros-and-cons-of-the-process-give-example-to-substantiate-your-answer-%e2%80%8b">14.
+                                            based on the approaches to research, assess the pros and cons of the process give example to substantiate your answer.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-pros-and-cons-of-a-full-time-employee-as-compared-to-a-commission-based-worker%e2%80%8b">15.
+                                            What are the pros and cons of a full time employee as compared to a commission based worker?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#wa-pro3-why-is-scientific-investigation-important-for-the-community4-what-is-a-community-based-problem%e2%80%8b">16.
+                                            wa PRO3. Why is scientific investigation important for the community?4. What is a community-based problem?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-the-appropriate-cutting-tool-a-trimming-shears-b-pinking-shears-c-dressmaker-bent-handled-shears-d-buttonhole-scissors%e2%80%8b">17.
+                                            It is the appropriate cutting tool a.Trimming shears b.Pinking shears c.Dressmaker bent handled shears d buttonhole scissors​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-which-of-the-following-is-not-a-type-of-shearsa-cutting-shearsb-pinking-shearsc-scalloping-shearsd-zigzag-shears%e2%80%8b">18.
+                                            2. Which of the following is not a type of shears?a. cutting shearsb. pinking shearsc. scalloping shearsd. zigzag shears​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-which-of-the-following-is-not-a-type-of-shearsa-cutting-shearsc-scalloping-shearsb-pinking-shearsd-zigzag-shears%e2%80%8b">19.
+                                            2. Which of the following is not a type of shears?a. cutting shearsC. scalloping shearsb. pinking shearsd. zigzag shears​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-ratio-of-shearing-stress-to-shearing-strain-is-called">20.
+                                            The ratio of shearing stress to shearing strain is called</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-is-not-a-type-of-shears-a-cutting-shears-b-pinking-shears-c-scalloping-shears-d-zigzag-shears-%e2%80%8b">21.
+                                            which of the following is not a type of shears A. Cutting shears B. Pinking shears C. Scalloping shears D. Zigzag shears ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#search-for-at-least-three-3-pros-and-cons-of-preventive-and-condition-based-maintenance">22.
+                                            Search for at least three (3) PROS and CONS of Preventive and Condition-Based Maintenance.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-5-pros-of-entrepreneurship-base-on-your-learning-and-observation-%e2%80%8b">23.
+                                            Give 5 PROS of entrepreneurship base on your learning and observation.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#in-fitt-pro-principle-what-is-i-stands-for-describe-based-on-training-principles%e2%80%8b">24.
+                                            in FITT pro Principle, What is "I" stands for, describe based on training principles​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-documentary-c-movie-trailer-b-newsflash-d-weather-report-it-describes-the-wea-a-documentary-c-internet-based-pro-b-movie-trailer-d-weather-report-an-informative-progi-a-documentary-c-inter">25.
+                                            A. documentary C. movie trailer B. newsflash D. weather report It describes the wea A. documentary C. internet-based pro B. movie trailer D. weather report An informative progi A. documentary C. internet-based pro​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-based-from-the-activity-describe-each-type-of-stress-1-compressional-stress2-tensional-stress3-shear-stress%e2%80%8b">26.
+                                            a) Based from the activity, describe each type of stress.1. Compressional stress2. Tensional stress3. Shear stress​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#base-and-the-approaches-to-research-assess-the-pros-and-cons-of-the-process-give-the-example-to-substantiate-your-answer%e2%80%8b">27.
+                                            base and the approaches to research assess the pros and cons of the process give the example to substantiate your answer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-which-of-the-following-is-not-a-type-of-shearsa-cutting-shearsb-pinking-shearsc-scalloping-shearsd-zigzag-shears-tama-dapat%e2%80%8b">28.
+                                            2. Which of the following is not a type of shears?a. cutting shearsb. pinking shearsc. scalloping shearsd. zigzag shears Tama dapat​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#scissors-have-diffirent-sizes-large-scissors-designed-to-cut-a-fabric-is-calleda-fabric-shearb-sewing-shearc-pinking-sheard-pruning-shear%e2%80%8b">29.
+                                            Scissors  have diffirent sizes. Large scissors designed to cut a fabric is called:a. Fabric shearb. Sewing shearc. Pinking sheard. Pruning shear​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bent-handled-shearsdressmaker-shear">30.
+                                            Bent-Handled Shears/Dressmaker Shear.</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="what-is-the-design-base-shear-allowed-by-the-code-g">
+                            1. What is the design base shear allowed by the code g?</h2><br />
+                        <p>Answer:</p><p>10.6 Estimating lateral forces</p><p>The lateral forces exerted on the sttucture by ground vibrations may be determined by the static or equivalent lateral force procedure ( ASCE 2003a,b, ASCE 2000/FEMA 2000). Base shear is an estimate of the maximum expected lateral force on the base of the structure due to seismic activity. it is calculated usinh the seismic zone, soil material, and building code lateral force equations ( Figure 10.3). Notations in IBC/UBC are used in mathemtical equations.</p><p>Explanation:</p><p>sana makatulong pagod na ko magtype haha</p><p></p><p></p><p></p><p></p><p>#HappyLearning</p><br />
+                                            <h2 class="ez-toc-section" id="pros-and-cons-of-internet-based-research">
+                            2. Pros and cons of Internet based research</h2><br />
+                        <p>Answer:i don't know if this is right if its pls message Me tnx </p><p></p><p>The Pros and Cons of Online Survey Research</p><p>Timely. Companies often realize that they need research too late. ...</p><p>Results Representative of the Population. ...</p><p>Cost-Effective. ...</p><p>No Borders. ...</p><p>Diverse. ...</p><p>Quality. ...</p><p>Lack of Probing. ...</p><p>Engage Participants For Short Time.</p><p>Explanation:</p><p>HOPEFULLY IM RIGHT </p><p>                AND</p><p>PLS HEART AND RATE IT. </p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-5-standards-based-instruction-in-pros-and-cons-%e2%80%8b">
+                            3. What are the 5 Standards based instruction in pros and cons ​</h2><br />
+                        <p><strong> higher-order thinking, depth of knowledge, connectedness to the world beyond the classroom, substantive conversation, and social support for student achievement</strong><strong>.</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="based-on-your-own-ideas-explain-the-pros-and-cons-of-online-businesses-%e2%80%8b">
+                            4. Based on your own ideas, explain the pros and cons of online businesses. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p> </p><p>Grow your online business at maging legit na online seller! No more manual order and inventory management! Daming time, daming benta. Post live stream. Sign up as a seller.</p><p><strong>Explanation:</strong></p>pa brainlest po thank you<br />
+                                            <h2 class="ez-toc-section" id="a-w24-x-94-beam-is-subjected-to-a-shear-force-of-900kna-compute-the-shear-stress-at-junction-of-flange-and-webb-compute-the-shear-at-neutral-axisc-compute-the-shear-force-carried-by-the-flanged">
+                            5. A w24 x 94 beam is subjected to a shear force of 900kn
+a. compute the shear stress at junction of flange and web
+b. compute the shear at neutral axis
+c. compute the shear force carried by the flange
+d. compute the shear force carried by the web
+e. compute the average shear stress on web</h2><br />
+                        <p><strong>Answer:</strong></p><p>Problem 575</p><p>Determine the maximum and minimum shearing stress in the web of the wide flange section in Fig. P-575 if V = 100 kN. Also, compute the percentage of vertical shear carried only by the web of the beam.</p><p> </p><p></p><p>Shear Force Carried by Wide Flange Section</p><br />
+                                            <h2 class="ez-toc-section" id="based-on-the-topic-given-write-atleast-one-advantage-and-disadvantage-using-the-pro-con-grid%e2%80%8b">
+                            6. based on the topic given write atleast one advantage and disadvantage using the pro-con grid​</h2><br />
+                        <p>sino singgle jan 13 years old pwede Naman maging Tayo oysshii</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-5-pros-of-entrepreneurship-base-on-your-learning-and-observation">
+                            7. Give 5 pros of entrepreneurship base on your learning and observation.</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Be your own boss. One of the most common reasons people start a business is because of the independence it creates. ...</p><p>2.Choose your own team. ...</p><p>3.Creative expression. ...</p><p>4.Excellent learning experience. ...</p><p>5.Flexible Schedule</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-is-not-a-type-of-shears-a-cutting-shears-b-pinking-shears-c-scalloping-shears-d-zigzag-shears-%e2%80%8b">
+                            8. Which of the following is not a type of shears?  a cutting shears b pinking shears c scalloping shears d zigzag shears ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D.zigzag shears</p><p></p><p>Explanation:</p><p></p><p>Pinking shears are scissors, the blades of which are sawtoothed instead of straight. They leave a zigzag pattern instead of a straight edge.</p><p></p><p>hope it helps</p><p>pa brainliest po</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pinking-shears-fabric-shears-sewing-shears%e2%80%8b">
+                            9. pinking shears fabric shears sewing shears​</h2><br />
+                        <p><strong>Answer:</strong></p><p>measuring tools:tape measure,ruler,meter stick,gauge
+</p><p>
+</p><p>yan lang alam ko</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-is-not-type-of-shears-a-cutting-shears-b-pinking-shearsc-scalloping-shearsd-zigzag-shears%e2%80%8b">
+                            10. which of the following is not type of shears a. cutting shears b. pinking shearsc. scalloping shearsd. zigzag shears​</h2><br />
+                        <p><strong>Answer:</strong></p><p>a.Cutting Shears</p><p><strong>Explanation:</strong></p><p>Hair-cutting shears are scissors that are specifically designed for cutting hair. They are also known as barber shears, hairdressing shears, or hair shears. Hair-cutting shears are significantly sharper than scissors, and designed specifically for cutting hair.</p><p></p><p>letter d- zigzag shears</p><p>kasi nagiiwan siya ng zigzag pattern instead of a straight edge.</p><br />
+                                            <h2 class="ez-toc-section" id="give-5-pros-of-entrepreneurship-base-on-your-learning-and-observation">
+                            11. Give 5 PROS of entrepreneurship base on your learning and observation.</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Be your own boss. One of the most common reasons people start a business is because of the independence it creates. ...</p><p>2.Choose your own team. ...</p><p>3.Creative expression. ...</p><p>4.Excellent learning experience. ...</p><p>5.Flexible Schedule. ...</p><p><strong>Explanation:</strong></p><p>tama po?</p><br />
+                                            <h2 class="ez-toc-section" id="based-on-the-national-security-policy-2017-2022-that-was-previously-deliberated-on-module-3-identify-the-pro-people-and-pro-environment-measure-that-the-government-had-established%e2%80%8bpahelp-po">
+                            12. based on the national security policy 2017 2022 that was previously deliberated on module 3 identify the pro people and pro-environment measure that the government had established​
+Pahelp po</h2><br />
+                        <p><strong>Answer:</strong></p><p>eto po sagot pag tama i brainlest moko</p><br />
+                                            <h2 class="ez-toc-section" id="list-down-pros-and-cons-of-using-carbon-based-fuels%e2%80%8b">
+                            13. List down pros and cons of using Carbon based Fuels​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Pros=U can get many of these</p><p>Cons=Contributes to pollution. And its sources will soon deplete if over used</p><br />
+                                            <h2 class="ez-toc-section" id="based-on-the-approaches-to-research-assess-the-pros-and-cons-of-the-process-give-example-to-substantiate-your-answer-%e2%80%8b">
+                            14. based on the approaches to research, assess the pros and cons of the process give example to substantiate your answer.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Qunatative research and Qualitative research methods.</p><p><strong>Explanation:</strong></p><p>Quantitative research methods involve using numbers to measure data. Researchers can use statistical analysis to find connections and meaning in the data. Qualitative research methods involve exploring information and non- numerical data. These research methods also examine how people might connect meaning to their experiences and emotions.</p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-pros-and-cons-of-a-full-time-employee-as-compared-to-a-commission-based-worker%e2%80%8b">
+                            15. What are the pros and cons of a full time employee as compared to a commission based worker?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>blah blah blah oops gomenasai</p><br />
+                                            <h2 class="ez-toc-section" id="wa-pro3-why-is-scientific-investigation-important-for-the-community4-what-is-a-community-based-problem%e2%80%8b">
+                            16. wa PRO3. Why is scientific investigation important for the community?4. What is a community-based problem?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>3.) To secure people's safety.</p><p>4.) individual problems,family problems.</p><br />
+                                            <h2 class="ez-toc-section" id="it-is-the-appropriate-cutting-tool-a-trimming-shears-b-pinking-shears-c-dressmaker-bent-handled-shears-d-buttonhole-scissors%e2%80%8b">
+                            17. It is the appropriate cutting tool a.Trimming shears b.Pinking shears c.Dressmaker bent handled shears d buttonhole scissors​</h2><br />
+                        <p><strong>Answer:</strong></p><p>C.Dressmaker bent handled shears</p><p><strong>Explanation:</strong></p><p>Scissors. The most common scissors used for cutting fabric are <strong>dressmakers shears,</strong> which have a bent handle. This makes it easier to keep the fabric laying flat while you cut. Use your scissors only for fabric to keep them nice and sharp.</p><p><strong>Answer:</strong></p><p>c.  dressmaker bent handled shears</p><p><strong>Explanation:</strong></p><p>yan yung sa akin</p><br />
+                                            <h2 class="ez-toc-section" id="2-which-of-the-following-is-not-a-type-of-shearsa-cutting-shearsb-pinking-shearsc-scalloping-shearsd-zigzag-shears%e2%80%8b">
+                            18. 2. Which of the following is not a type of shears?a. cutting shearsb. pinking shearsc. scalloping shearsd. zigzag shears​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D.zigzag shears</p><p><strong>Explanation:</strong></p><p>Pinking shears are scissors, the blades of which are sawtoothed instead of straight. They leave a zigzag pattern instead of a straight edge. </p><br />
+                                            <h2 class="ez-toc-section" id="2-which-of-the-following-is-not-a-type-of-shearsa-cutting-shearsc-scalloping-shearsb-pinking-shearsd-zigzag-shears%e2%80%8b">
+                            19. 2. Which of the following is not a type of shears?a. cutting shearsC. scalloping shearsb. pinking shearsd. zigzag shears​</h2><br />
+                        <p><strong>Answer:</strong></p><p>b pinking shears</p><p><strong>Explanation:</strong></p><p>pinking shears is scissors </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="the-ratio-of-shearing-stress-to-shearing-strain-is-called">
+                            20. The ratio of shearing stress to shearing strain is called</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>The ratio of shearing stress to the corresponding shearing strain is called <strong>shear modulus.</strong></p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-is-not-a-type-of-shears-a-cutting-shears-b-pinking-shears-c-scalloping-shears-d-zigzag-shears-%e2%80%8b">
+                            21. which of the following is not a type of shears A. Cutting shears B. Pinking shears C. Scalloping shears D. Zigzag shears ​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>D. Zigzag Shears</strong></p><p><strong>Explanation:</strong></p><p>It was supposed to be <strong>Zigzag Scissors</strong> not shears</p><br />
+                                            <h2 class="ez-toc-section" id="search-for-at-least-three-3-pros-and-cons-of-preventive-and-condition-based-maintenance">
+                            22. Search for at least three (3) PROS and CONS of Preventive and Condition-Based Maintenance.</h2><br />
+                        Hope This Answer Helps :-)Mark This Answer Into BRAINLIEST ^_^]Thanks!<p></p><p>~ In The Photo ~</p><br />
+                                            <h2 class="ez-toc-section" id="give-5-pros-of-entrepreneurship-base-on-your-learning-and-observation-%e2%80%8b">
+                            23. Give 5 PROS of entrepreneurship base on your learning and observation.​</h2><br />
+                        <p><strong>Answer:</strong></p><strong>Be your own boss.</strong><strong>Learning To See Possibilities Everywhere. When you have to rely on yourself and your imagination in order to generate income, this awareness goes with the territory</strong><strong>Learning To See Possibilities Everywhere. When you have to rely on yourself and your imagination in order to generate income, this awareness goes with the territoryDefining Your Income. </strong><strong>Who decides how much you’re getting paid?</strong><strong>Who decides how much you’re getting paid?Flexibility In Your Schedule.</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>Enjoying Your Work.</strong><br />
+                                            <h2 class="ez-toc-section" id="in-fitt-pro-principle-what-is-i-stands-for-describe-based-on-training-principles%e2%80%8b">
+                            24. in FITT pro Principle, What is "I" stands for, describe based on training principles​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Intensity</p><p></p><p>daw sabi nung nag answer*</p><p></p><p><strong>Answer:</strong></p><p>I stands for Intensity means that the degree of effort or exertion put forth by an individual during exercise.</p><br />
+                                            <h2 class="ez-toc-section" id="a-documentary-c-movie-trailer-b-newsflash-d-weather-report-it-describes-the-wea-a-documentary-c-internet-based-pro-b-movie-trailer-d-weather-report-an-informative-progi-a-documentary-c-inter">
+                            25. A. documentary C. movie trailer B. newsflash D. weather report It describes the wea A. documentary C. internet-based pro B. movie trailer D. weather report An informative progi A. documentary C. internet-based pro​</h2><br />
+                        <p><strong>Answer:</strong></p><p>hindi ko po maintindihan, saan diyan yung sasagutan?</p><br />
+                                            <h2 class="ez-toc-section" id="a-based-from-the-activity-describe-each-type-of-stress-1-compressional-stress2-tensional-stress3-shear-stress%e2%80%8b">
+                            26. a) Based from the activity, describe each type of stress.1. Compressional stress2. Tensional stress3. Shear stress​</h2><br />
+                        <p><strong>A</strong><strong>n</strong><strong>s</strong><strong>w</strong><strong>e</strong><strong>r</strong><strong>:</strong></p><p><strong>1</strong><strong>.</strong><strong>C</strong><strong>o</strong><strong>m</strong><strong>p</strong><strong>r</strong><strong>e</strong><strong>s</strong><strong>s</strong><strong>i</strong><strong>o</strong><strong>n</strong><strong>a</strong><strong>l</strong><strong> </strong><strong>S</strong><strong>t</strong><strong>r</strong><strong>e</strong><strong>s</strong><strong>s</strong><strong>-</strong><strong>The stress that squeezes something. It is the stress component perpendicular to a given surface, such as a fault plane, that results from forces applied perpendicular to the surface or from remote forces transmitted through the surrounding rock</strong></p><p><strong>2</strong><strong>.</strong><strong>Tensional stress</strong><strong>-</strong><strong>T</strong><strong>e</strong><strong>n</strong><strong>s</strong><strong>i</strong><strong>o</strong><strong>n</strong><strong>a</strong><strong>l</strong><strong> </strong><strong>s</strong><strong>t</strong><strong>r</strong><strong>e</strong><strong>s</strong><strong>s</strong><strong> </strong><strong>is the stress that tends to pull something apart. It is the stress component perpendicular to a given surface, such as a fault plane, that results from forces applied perpendicular to the surface or from remote forces transmitted through the surrounding rock.</strong></p><p><strong>3</strong><strong>.</strong><strong>S</strong><strong>h</strong><strong>e</strong><strong>a</strong><strong>r</strong><strong> </strong><strong>S</strong><strong>t</strong><strong>r</strong><strong>e</strong><strong>s</strong><strong>s</strong><strong>-</strong><strong>Shear stress, force tending to cause deformation of a material by slippage along a plane or planes parallel to the imposed stress. The resultant shear is of great importance in nature, being intimately related to the downslope movement of earth materials and to earthquakes.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="base-and-the-approaches-to-research-assess-the-pros-and-cons-of-the-process-give-the-example-to-substantiate-your-answer%e2%80%8b">
+                            27. base and the approaches to research assess the pros and cons of the process give the example to substantiate your answer​</h2><br />
+                        <p><strong>Answer:</strong></p><p>hirap naman ng Tanong nayan</p><p><strong>Answer:</strong></p><p>ndbhabdjdndn</p><p><strong>Explanation:</strong></p><p>(1) We have evidence to substantiate the allegations against him. </p><p></p><p>(2) There is little scientific evidence to substantiate the claims. </p><p></p><p>(3) Katzen offered little evidence to substantiate his </p><br />
+                                            <h2 class="ez-toc-section" id="2-which-of-the-following-is-not-a-type-of-shearsa-cutting-shearsb-pinking-shearsc-scalloping-shearsd-zigzag-shears-tama-dapat%e2%80%8b">
+                            28. 2. Which of the following is not a type of shears?a. cutting shearsb. pinking shearsc. scalloping shearsd. zigzag shears Tama dapat​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D. Zigzag shears</p><p></p><p><strong>Explaination</strong><strong>:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="scissors-have-diffirent-sizes-large-scissors-designed-to-cut-a-fabric-is-calleda-fabric-shearb-sewing-shearc-pinking-sheard-pruning-shear%e2%80%8b">
+                            29. Scissors  have diffirent sizes. Large scissors designed to cut a fabric is called:a. Fabric shearb. Sewing shearc. Pinking sheard. Pruning shear​</h2><br />
+                        <p><strong>Answer:</strong></p><p>c.pinking shear</p><p><strong>Explanation:</strong></p><p>correct if me wrong</p><br />
+                                            <h2 class="ez-toc-section" id="bent-handled-shearsdressmaker-shear">
+                            30. Bent-Handled Shears/Dressmaker Shear.</h2><br />
+                        <p>Answer:</p><p>Dressmaker's shears are heavy duty scissors that are designed specifically with the needs of seamstresses in mind. These shears are designed to cut efficiently and smoothly through a wide variety of materials, and they are typically forged so that they can withstand a lifetime of use. Many craft stores sell them in varying qualities, and they can also be ordered directly from manufacturers; when ordered from the manufacturer, they may come with a warranty or sharpening service.</p><p></p><p>The distinguishing feature of dressmaker's shears is that the handle is offset from the blades, allowing them to be used to cut fabric against a flat surface without distortion. Like other shears, one of the finger rings is typically larger than the other. In industry terms, the finger rings on scissors and shears are known as “bows,” and on this type of shears, the large bow is usually on the side of the blade that points towards the floor when the shears are in use.</p><p> </p><p>hope it helps</p><p>pa brainliest po</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/4lEioKWvBFk?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>computer_science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/beneco-south-drive.html">Beneco South Drive</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/teacher-s-guide-grade-4-mathematics-pdf.html">Teacher s Guide Grade 4 Mathematics Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/test-in-tagalog.html">Test In Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/miss-l-in-rizal-s-life.html">Miss L In Rizal s Life</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/assassin-s-creed-syndicate-fitgirl.html">Assassin s Creed Syndicate Fitgirl</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/pangkat-etniko-sa-mindanao.html">Pangkat Etniko Sa Mindanao</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/tdco-pnp.html">Tdco Pnp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/bdo-imall-canlubang-contact.html">Bdo Imall Canlubang Contact</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/concerto-d-amore.html">Concerto D Amore</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/nahigugma-ako-sa-imo-meaning.html">Nahigugma Ako Sa Imo Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/mga-larawan-ng-salawikain-sawikain-at-kasabihan.html">Mga Larawan Ng Salawikain Sawikain At Kasabihan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/rope-manship.html">Rope Manship</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/law-on-credit-transactions-pdf.html">Law On Credit Transactions Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/dpwh-road-design-standards.html">Dpwh Road Design Standards</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/langit-sa-itaas-langit-sa-ibaba.html">Langit Sa Itaas Langit Sa Ibaba</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/soft-copy-stories.html">Soft Copy Stories</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/brgy-pio-del-pilar-zip-code.html">Brgy Pio Del Pilar Zip Code</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/excuse-letter-for-being-absent-in-practice.html">Excuse Letter For Being Absent In Practice</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/shakeys-espanya.html">Shakeys Espanya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/philippine-integrated-disease-surveillance-and-response.html">Philippine Integrated Disease Surveillance And Response</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pingstudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pingstudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

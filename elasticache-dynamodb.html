@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elasticache Dynamodb - QnA</title>
+    <meta name="description" content="Elasticache Dynamodb, , , , , , , 0, Real-Time Analytics On DynamoDB With Lambda &amp; More | Rockset, rockset.com, 3654 x 760, png, , 20, elasticache-dynamodb, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Elasticache Dynamodb - QnA" />
+    <meta property="og:description" content="Elasticache Dynamodb, , , , , , , 0, Real-Time Analytics On DynamoDB With Lambda &amp; More | Rockset, rockset.com, 3654 x 760, png, , 20, elasticache-dynamodb, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Elasticache Dynamodb - QnA" />
+    <meta name="twitter:description" content="Elasticache Dynamodb, , , , , , , 0, Real-Time Analytics On DynamoDB With Lambda &amp; More | Rockset, rockset.com, 3654 x 760, png, , 20, elasticache-dynamodb, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pingstudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pingstudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pingstudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pingstudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pingstudy.github.io">Home</a></li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pingstudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Elasticache Dynamodb</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">rennahsanjuan</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Elasticache+Dynamodb" alt="Elasticache Dynamodb">
+                    </div>
+                    <p></p>
+                    <p>2. generator or dynamo​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-generator-or-dynamo%e2%80%8b">1.
+                                            2. generator or dynamo​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-dynamo-effect%e2%80%8b">2.
+                                            What is dynamo effect?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#paru-parong-bukid-dynamoics%e2%80%8b">3.
+                                            paru parong bukid dynamoics​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#electric-motors-are-also-called-dynamo-true-or-false%e2%80%8b">4.
+                                            electric motors are also called dynamo. TRUE or FALSE​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#water-has-seen-an-increase-in-demand-8-this-summer-while-the-price-has-decreased-12a-1-5-inelasticb-1-5-elasticc-67-inelasticd-67-elastic">5.
+                                            Water has seen an increase in demand 8% this summer, while the price has decreased 12%A. 1.5 inelasticB. 1.5 elasticC. .67 inelasticD. .67 elastic</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-resistance-of-the-field-coils-with-copper-conductor-of-a-dynamo-is-120-ohms-at-25-o-c-after-working-for-6-hours-on-full-load-the-resistance-of-the-coil-increases-to-140-ohms-calculate-the-mean">6.
+                                            The resistance of the field coils with copper conductor of a dynamo is 120 Ohms at 25 o C.
+After working for 6 hours on full load, the resistance of the coil increases to 140 Ohms.
+Calculate the mean temperature rise of the field coil. Take the temperature coefficient of the
+conductor material as 0.0042 at 0 o C.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-compound-dynamo-supplies-a-load-of-20-kw-at-400-v-through-a-feeder-having-a-resistance-equal-to-0-1-ohm-the-shunt-and-series-field-resistances-are-85-ohms-and-0-06-ohm-respectively-determine-the">7.
+                                            A compound dynamo supplies a load of 20 kw at 400 v through a feeder having a resistance equal to 0.1 ohm. the shunt and series field resistances are 85 ohms and 0.06 ohm, respectively. determine the total electromotive force when the generator is connected short-shunt. assume a brush contact drop of 1 v per brush and an armature resistance of 0.1 ohm.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-8-2-acdc-how-does-it-work-the-generator-has-2-types-alternating-current-ac-and-direct-current-dc-they-work-on-the-principle-of-electromagnetic-induction-directions-write-ad-for-alter">8.
+                                            Activity 8.2: ACDC - How does it work? The generator has 2 types Alternating current (AC) and Direct current (DC). They work on the principle of electromagnetic induction Directions Write Ad for alternating current, DC for direct current, and ACDC for both 1. It is used in bike's light 2. It is also called alternator 3. It is also called dynamo 4. It uses two split rings coil 5. It uses a splitring commutator​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-1-in-your-notebook-define-the-following1-melody2-rhythm3-dynamo4-texture5-tempo%e2%80%8b">9.
+                                            Learning Task 1: In your notebook, define the following1. Melody2. Rhythm3. Dynamo4. Texture5. Tempo​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-an-electromagnet-made-by-coiling-wires-around-two-or-more-poles-ofmetal-core-_________2-it-is-a-pair-of-plates-attached-to-the-axle-_________3-these-are-connected-to-the-source-of-energy-an">10.
+                                            It is an electromagnet made by coiling wires around two or more poles of
+metal core.
+_________2. It is a pair of plates attached to the axle.
+_________3. These are connected to the source of energy and work with the commutator
+in order to let the induced current flow around the system.
+_________4. These are the hollow rings that are connected to the ends of the armature
+coil.
+_________5. The rotating coil or coils of a dynamo or electric motor.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#write-youranswer1-battery-operated-toy-carheat2-energy-from-the-sun-during-photosynthesis3-a-dynamo-is-used-to-light-a-bulb%e2%80%8b">11.
+                                            Write youranswer1.battery operated toy carheat2. energy from the sun during photosynthesis3. a dynamo is used to light a bulb​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-dynamowhat-is-electronwhat-is-positive-charge%e2%80%8b">12.
+                                            what is dynamowhat is electronwhat is positive charge​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sa-iyongpalagay-naka-buti-ba-para-sa-lahat-ang-dynamo-at-bakit-%e2%80%8b">13.
+                                            sa iyong,palagay naka buti ba para sa lahat ang dynamo? at bakit? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-six-pole-dynamo-with-interpoles-requires-360-inductors-on-its-armature-with-three-turns-per-coil-and-two-coil-sides-per-slot">14.
+                                            A six pole dynamo, with interpoles, requires 360 inductors on its armature, with three turns per coil and two coil sides per slot.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-does-the-bicycle-dynamo-can-charge-a-phonemake-it-short-and-simple-plss">15.
+                                            why does the bicycle dynamo can charge a phone???
+make it short and simple plss</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-benefits-of-using-a-bicycle-dynamo">16.
+                                            what are the benefits of using a bicycle dynamo</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-statements-about-kinetic-molecular-theory-of-gases-is-incorrecta-gases-move-faster-at-high-temperature-b-particles-of-a-gas-move-rapidly-in-all-directions-d-collision-among">17.
+                                            Which of the following statements about kinetic molecular theory of gases is incorrect?
+A. Gases move faster at high temperature.B. Particles of a gas move rapidly in all directions.D. Collision among molecules is perfectly elastic.C. There is a strong attractive force between gas molecules</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#when-was-direct-current-dc-dynamo-invented">18.
+                                            When was direct-current (dc) dynamo invented?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tempomelodymetertimbretexturedynamos-and-mood-of-sitsiritsit%e2%80%8b">19.
+                                            Tempo,melody,meter,timbre,texture,dynamos and mood of sitsiritsit​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-2-song-comparison-listen-to-the-selected-music-from-the-renaissance-baroque-and-classical-period-describe-each-musical-piece-put-a-check-in-the-box-of-the-corresponding-characteristic-elem">20.
+                                            Activity 2 Song Comparison Listen to the selected music from the Renaissance, Baroque, and Classical period Describe each musical piece. Put a check in the box of the corresponding characteristic element Title of the Compo Melody Tempo Dynamo Test Live Sadly slow Mader he Fast Mostly Mady Soft Loud Mone Potyphon Momoph hone onic Thomas Morley Love and Antonio Viva The Seasons FQ Haydn Symphony no in Malor Surprise movementanswer: patulong nito plsssalamat po​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tulong-please-nonsensereportwhat-to-doanswer-the-following-questions-below-1-how-can-you-define-the-structure-of-the-earth2-how-does-the-interior-structure-of-earth-affect-the-processes-at-its">21.
+                                            Tulong Please Nonsense=Report
+WHAT TO DO
+Answer the following questions below.
+1. How can you define the structure of the Earth?
+2. How does the interior structure of Earth affect the processes at its surface?
+3. What is dynamo effect?
+4. How important is the geomagnetic field?
+WHAT TO DO
+Make your own timeline that summarizes the development of the Plate Tectonic Theory. Your timeline should 
+include names of scientists and their contribution to plate tectonics.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#paano-gumawa-ng-diy-boat-gamit-ang-dynamo-%e2%80%8b">22.
+                                            paano gumawa ng diy boat gamit ang dynamo ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pls-right-the-difference1-lion-tiger-dynamons-fish2-tiger-dog-cat-aprilfools3-fish-shark-megalodon%e2%80%8b">23.
+                                            pls right the difference1. lion tiger dynamons fish2.Tiger dog cat aprilfools3.Fish shark megalodon​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#san-dynamad-tymovesthe-simplest-way-of-charge-body-is-bynabbinginduction-conduction-consischarging-without-touching-the-charged-body-the-so-thathas-to-be-charged7-charging-by-induction-conduction-f">24.
+                                            San Dynamad tymovesThe simplest way of charge body is bynabbinginduction, conduction consischarging without touching the charged body the so thathas to be charged7. Charging by induction, conduction friction ischarging by touching an object to be charged to a charged body​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#scienceexplain-the-importnance-of-dynamo-effect%e2%80%8b">25.
+                                            scienceexplain the importnance of Dynamo effect​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-mechanically-generated-electricity-does-not-belong-to-the-groupa-batteryb-diesel-driven-enginesc-dynamod-hydroelectric-power%e2%80%8b">26.
+                                            Which of the following mechanically generated electricity does not belong to the groupA. BatteryB. Diesel driven enginesC. DynamoD. Hydroelectric power​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-difference-between-an-electric-motor-and-a-dynamo%e2%80%8b">27.
+                                            what is the difference between an electric motor and a dynamo?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#an-element-that-is-used-to-make-electrical-wire-electrical-motor-dynamo-and-coins%e2%80%8b">28.
+                                            An element that is used to make electrical wire, electrical motor, dynamo and coins​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#teacher-tess-in-her-grade-5-class-asked-her-pupils-to-do-an-experiment-teacher-tess-gave-each-group-the-materials-they-need-and-in-your-group-you-need-to-run-the-dynamo-in-order-for-the-attached">29.
+                                            Teacher Tess, in her Grade 5 class, asked her pupils to do an experiment. Teacher Tess gave each group the materials they need. And in your group, you need to run the dynamo in order for the attached strips of cellophane to move just like a mini ceiling fan. But then, suddenly, it did not work. What do you think now is the best thing for you to do so that your experiment will work?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#41-lungs-is-made-of-a-spongy-tissue-heart-is-made-of-dense-connective-tissue-with-elastica-fiber-and-the-human-brain-is-made-of-soft-tissue-containing-nerve-cell-these-three-organs-need-protection">30.
+                                            41. Lungs is made of a spongy tissue, heart is made of dense connective tissue with elastica fiber and the human brain is made of soft tissue containing nerve cell. These three organs need protection from which of the following body system.A. Integumentary SystemC. Digestive SystemB. Respiratory SystemD. Skeletal System​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="2-generator-or-dynamo%e2%80%8b">
+                            1. 2. generator or dynamo​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Dynamos and Generators convert mechanical rotation into electric power. Dynamo - a device that makes direct current electric power using electromagnetism. It is also known as a generator, however the term generator normally refers to an "alternator" which creates alternating current power.</p><p><strong>Explanation:</strong></p><p>A dynamo is an electrical generator that creates direct current using a commutator. Dynamos were the first electrical generators capable of delivering power for industry, and the foundation upon which</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-dynamo-effect%e2%80%8b">
+                            2. What is dynamo effect?​</h2><br />
+                        <p>Dynamo Effect. The dynamo effect is a geophysical theory that explains the origin of the Earth's main magnetic field in terms of a self-exciting (or self-sustaining) dynamo. ... The electric current, in turn, produces a magnetic field that also interacts with the fluid motion to create a secondary magnetic field.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="paru-parong-bukid-dynamoics%e2%80%8b">
+                            3. paru parong bukid dynamoics​</h2><br />
+                        <p><strong>Answer:</strong></p><p>i dont know sorryyydkdkd</p><br />
+                                            <h2 class="ez-toc-section" id="electric-motors-are-also-called-dynamo-true-or-false%e2%80%8b">
+                            4. electric motors are also called dynamo. TRUE or FALSE​</h2><br />
+                        <p><strong>answer</strong><strong>:</strong></p><p></p><strong>True </strong><strong>ang </strong><strong>sagot </strong><strong>Sana </strong><strong>makatulong</strong><br />
+                                            <h2 class="ez-toc-section" id="water-has-seen-an-increase-in-demand-8-this-summer-while-the-price-has-decreased-12a-1-5-inelasticb-1-5-elasticc-67-inelasticd-67-elastic">
+                            5. Water has seen an increase in demand 8% this summer, while the price has decreased 12%A. 1.5 inelasticB. 1.5 elasticC. .67 inelasticD. .67 elastic</h2><br />
+                        <p>The water price <strong>(D) 0.67 inelastic.</strong></p><p><strong></strong></p><p><strong>Explanation :</strong></p><p><strong></strong></p><p>The<strong> elasticity of demand</strong> refers to the extent to which demand can influence or respond to price changes. Price is the most commonly used economic factor when determining elasticity.</p><p><strong>Inelastic</strong> is a condition in which a static quantity of goods or services changes in price. Inelastic demand means that when the price of a good or service rises, consumers' buying habits will remain the same, and when prices fall, consumers' buying habits will also remain unchanged.</p><p><strong>Water is an example of an inelastic product </strong>because there is nothing that can limit it at this time, no matter the price increase or decrease, the demand for water will always be stable so it is classified as an inelastic product. A price elasticity of <strong>0.67 </strong>implies that if the price increases by 1%, the quantity demanded will decrease by 1%. In such a scenario, demand is considered to be price inelastic.</p><p></p><p><strong>Learn More About :</strong></p><p>Classify the following illustrations of collision as elastic, inelastic, or perfectly inelastic. https://brainly.ph/question/16502392</p><p>#SPJ4</p><br />
+                                            <h2 class="ez-toc-section" id="the-resistance-of-the-field-coils-with-copper-conductor-of-a-dynamo-is-120-ohms-at-25-o-c-after-working-for-6-hours-on-full-load-the-resistance-of-the-coil-increases-to-140-ohms-calculate-the-mean">
+                            6. The resistance of the field coils with copper conductor of a dynamo is 120 Ohms at 25 o C.
+After working for 6 hours on full load, the resistance of the coil increases to 140 Ohms.
+Calculate the mean temperature rise of the field coil. Take the temperature coefficient of the
+conductor material as 0.0042 at 0 o C.</h2><br />
+                        <p><strong>Answer:</strong></p><p>Hence mean temperature rise in the field coil is 65.48°C</p><p><strong>Step-by-step explanation:</strong></p><p>According to the question
+</p><p>
+</p><p>140 = 120 [1+0.0042(T-25) ]
+</p><p>
+</p><p>140/120   = 1 + 0.0042*(T-25)
+</p><p>
+</p><p>1.17 = 1 + 0.0042(T-25)
+</p><p>
+</p><p>T-25 = (1.17-1)/0.0042
+</p><p>
+</p><p>T = 40.48 + 25  </p><p>
+</p><p>T = 65.48 °C</p><br />
+                                            <h2 class="ez-toc-section" id="a-compound-dynamo-supplies-a-load-of-20-kw-at-400-v-through-a-feeder-having-a-resistance-equal-to-0-1-ohm-the-shunt-and-series-field-resistances-are-85-ohms-and-0-06-ohm-respectively-determine-the">
+                            7. A compound dynamo supplies a load of 20 kw at 400 v through a feeder having a resistance equal to 0.1 ohm. the shunt and series field resistances are 85 ohms and 0.06 ohm, respectively. determine the total electromotive force when the generator is connected short-shunt. assume a brush contact drop of 1 v per brush and an armature resistance of 0.1 ohm.</h2><br />
+                        <p>[tex]\tt{\huge{\red{Solution:}}}[/tex]</p>Solving for the load current<p>[tex]I_{\text{L}} = \dfrac{P_{\text{L}}}{V_{\text{L}}}[/tex]</p><p>[tex]I_{\text{L}} = \dfrac{\text{20000 W}}{\text{400 V}}[/tex]</p><p>[tex]I_{\text{L}} = \text{50 A}[/tex]</p>Solving for the shunt field current<p>[tex]I_{\text{sh}} = \dfrac{V + I_{\text{L}}(R_{\text{feeder}} + R_\text{se})}{R_{\text{sh}}}[/tex]</p><p>[tex]I_{\text{sh}} = \dfrac{\text{400 V} + (\text{50 A})(\text{0.1 ohm + 0.06 ohm})}{\text{85 ohm}}[/tex]</p><p>[tex]I_{\text{sh}} = \text{4.8 A}[/tex]</p>Solving for the armature current<p>[tex]I_{\text{a}} = I_{\text{L}} + I_{\text{sh}}[/tex]</p><p>[tex]I_{\text{a}} = \text{50 A + 4.8 A}[/tex]</p><p>[tex]I_{\text{a}} = \text{54.8 A}[/tex]</p>Solving for the generated emf<p>[tex]E = V + I_{\text{L}}(R_{\text{feeder}} + R_{\text{se}}) + I_{\text{a}}R_{\text{a}} + V_{\text{brush}}[/tex]</p><p>[tex]E = \text{400 V + (50 A)(0.1 ohm + 0.06 ohm) + (54.8 A)(0.1 ohm) + 2(1 V)}[/tex]</p><p>[tex]\boxed{E = \text{415.48 V}}[/tex]</p><p>Therefore, the generated emf is <strong>415.48 V.</strong></p><p>[tex]\\[/tex]</p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="activity-8-2-acdc-how-does-it-work-the-generator-has-2-types-alternating-current-ac-and-direct-current-dc-they-work-on-the-principle-of-electromagnetic-induction-directions-write-ad-for-alter">
+                            8. Activity 8.2: ACDC - How does it work? The generator has 2 types Alternating current (AC) and Direct current (DC). They work on the principle of electromagnetic induction Directions Write Ad for alternating current, DC for direct current, and ACDC for both 1. It is used in bike's light 2. It is also called alternator 3. It is also called dynamo 4. It uses two split rings coil 5. It uses a splitring commutator​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Ac</p><p>dc</p><p>acdc</p><p>ac</p><p>ac</p><p>not sure itama nyo nlng pag mali</p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-1-in-your-notebook-define-the-following1-melody2-rhythm3-dynamo4-texture5-tempo%e2%80%8b">
+                            9. Learning Task 1: In your notebook, define the following1. Melody2. Rhythm3. Dynamo4. Texture5. Tempo​</h2><br />
+                        <p><strong>Answer:</strong></p><p>pic po diko po makita yung explanation </p><br />
+                                            <h2 class="ez-toc-section" id="it-is-an-electromagnet-made-by-coiling-wires-around-two-or-more-poles-ofmetal-core-_________2-it-is-a-pair-of-plates-attached-to-the-axle-_________3-these-are-connected-to-the-source-of-energy-an">
+                            10. It is an electromagnet made by coiling wires around two or more poles of
+metal core.
+_________2. It is a pair of plates attached to the axle.
+_________3. These are connected to the source of energy and work with the commutator
+in order to let the induced current flow around the system.
+_________4. These are the hollow rings that are connected to the ends of the armature
+coil.
+_________5. The rotating coil or coils of a dynamo or electric motor.</h2><br />
+                        <p><strong>Answer:</strong></p><p>2.the commutator    It is a pair of plates attached to the axle.</p><p>3.Electric    These are connected to the source of energy and work with the commutator</p><p>4.Slip rings    These are the hollow rings that are connected to the ends of the armature coil.</p><p>5.The armature    The rotating coil or coils of a dynamo or electric motor.</p><br />
+                                            <h2 class="ez-toc-section" id="write-youranswer1-battery-operated-toy-carheat2-energy-from-the-sun-during-photosynthesis3-a-dynamo-is-used-to-light-a-bulb%e2%80%8b">
+                            11. Write youranswer1.battery operated toy carheat2. energy from the sun during photosynthesis3. a dynamo is used to light a bulb​</h2><br />
+                        <p><strong>Answer:</strong></p><p>pls answer this please not messing around </p><br />
+                                            <h2 class="ez-toc-section" id="what-is-dynamowhat-is-electronwhat-is-positive-charge%e2%80%8b">
+                            12. what is dynamowhat is electronwhat is positive charge​</h2><br />
+                        <p>dynamo is an electrical generator that creates direct current using a commutator. ... A dynamo has the disadvantages of a mechanical commutator. Also, converting alternating to direct current using rectifiers (such as vacuum tubes or more recently via solid state technology) is effective and usually economical.</p><p><strong>Explanation:</strong></p><p>electron a stable subatomic particle with a charge of negative electricity, found in all atoms and acting as the primary carrier of electricity in solids.</p><p></p><p>That means an atom with a neutral charge is one where the number of electrons is equal to the atomic number. Ions are atoms with extra electrons or missing electrons. When you are missing an electron or two, you have a positive charge. When you have an extra electron or two, you have a negative charge.</p><p><strong>Answer:</strong></p><p>dynamo-a machine for converting mechanical energy into electrical energy; a generator.</p><p></p><p>electron-a stable subatomic particle with a charge of negative electricity, found in all atoms and acting as the primary carrier of electricity in solids.</p><p></p><p>positive charge-If an object has a positive charge, that means it has lost some electrons and now has more protons than electrons.</p><br />
+                                            <h2 class="ez-toc-section" id="sa-iyongpalagay-naka-buti-ba-para-sa-lahat-ang-dynamo-at-bakit-%e2%80%8b">
+                            13. sa iyong,palagay naka buti ba para sa lahat ang dynamo? at bakit? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>oo</p><p><strong>Explanation:</strong></p><p>dahil nakakatulong ito sa mga tao</p><br />
+                                            <h2 class="ez-toc-section" id="a-six-pole-dynamo-with-interpoles-requires-360-inductors-on-its-armature-with-three-turns-per-coil-and-two-coil-sides-per-slot">
+                            14. A six pole dynamo, with interpoles, requires 360 inductors on its armature, with three turns per coil and two coil sides per slot.</h2><br />
+                        <p><strong>Answer:</strong></p><p>  </p><p>[tex]/huge/color{blue}/boxed{Hello}[/tex]</p><p>tex</p><p></p><p> </p><p></p><p>[tex]/huge/color{blue}/boxed{Hello}[/tex]</p><p>tex</p><p></p><p> </p><p></p><p>   </p><p>[tex]/huge/color{blue}/boxed{Hello}[/tex]</p><p>tex</p><p></p><p> </p><p></p><p>[tex]/huge/color{blue}/boxed{Hello}[/tex]</p><p>tex</p><p></p><p> </p><p></p><p>[tex]/huge/color{blue}/boxed{Hello}[/tex]</p><p>tex</p><p></p><p> </p><p></p><p></p><p><strong>Explanation:</strong></p><p> </p><p>[tex]/huge/color{blue}/boxed{Hello}[/tex]</p><p>tex</p><p></p><p> </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="why-does-the-bicycle-dynamo-can-charge-a-phonemake-it-short-and-simple-plss">
+                            15. why does the bicycle dynamo can charge a phone???
+make it short and simple plss</h2><br />
+                        very simple and reliable generator that turns rotational momentum into Ac electricity. Its all because of rectifier and capcitor and voltage regulator that converts the back and forth wiggling of the charges...<br />
+                                            <h2 class="ez-toc-section" id="what-are-the-benefits-of-using-a-bicycle-dynamo">
+                            16. what are the benefits of using a bicycle dynamo</h2><br />
+                        Unlimited burn time<br />Always available<br />High-efficiency optics designed to maximize the available power for the lamp (optimised for road use)<br />Reliable (see below for known issues with bottle dynamos)<br />Environmentally friendly and inexpensive to run<br />Unattractive to thieves, due to difficult removal.<br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-statements-about-kinetic-molecular-theory-of-gases-is-incorrecta-gases-move-faster-at-high-temperature-b-particles-of-a-gas-move-rapidly-in-all-directions-d-collision-among">
+                            17. Which of the following statements about kinetic molecular theory of gases is incorrect?
+A. Gases move faster at high temperature.B. Particles of a gas move rapidly in all directions.D. Collision among molecules is perfectly elastic.C. There is a strong attractive force between gas molecules</h2><br />
+                        QUESTION:<p>Which of the following statements about kinetic molecular theory of gases is incorrect?</p><p>A. Gases move faster at high temperature.</p><p>B. Particles of a gas move rapidly in all directions.</p><p>D. Collision among molecules is perfectly elastic.</p><p>C. There is a strong attractive force between gas molecules.</p>ANSWER:<p>C. There is a strong attractive force between gas molecules.</p><p>[tex]\\[/tex]</p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="when-was-direct-current-dc-dynamo-invented">
+                            18. When was direct-current (dc) dynamo invented?</h2><br />
+                        When was direct-current (dc) dynamo invented?<p>It was 1827 when the direct-current <strong>dynamo </strong>was being experimented on by a scientist.</p><p>Anyos Jedlik, a Hungarian, began experimenting with electromagnetic rotating devices such as <strong>dynamo</strong>, which he named electromagnetic self-rotors, in 1827, independently of Faraday. Both the stationary and spinning portions of the single-pole electric starter prototype were electromagnetic.</p><p>He conceived the <strong>dynamo </strong>concept in 1856, six years before Siemens and Wheatstone, but he did not patent it since he believed he was not the first to realize it. His <strong>dynamo </strong>employed two electromagnets positioned opposite each other to produce the magnetic field surrounding the rotor instead of permanent magnets. It was also the discovery of the <strong>dynamo </strong>self-excitation, which superseded permanent magnet designs.</p><p></p><p></p><p>Using of direct current? (dc)​</p><p>brainly.ph/question/10557318</p><p>#LETSSTUDY</p><br />
+                                            <h2 class="ez-toc-section" id="tempomelodymetertimbretexturedynamos-and-mood-of-sitsiritsit%e2%80%8b">
+                            19. Tempo,melody,meter,timbre,texture,dynamos and mood of sitsiritsit​</h2><br />
+                        <p><strong>Answer:</strong></p><p>meter=quadruple</p><p><strong>Explanation:</strong></p><p>cause its 4/4</p><p></p><p>follow for more answers.</p><br />
+                                            <h2 class="ez-toc-section" id="activity-2-song-comparison-listen-to-the-selected-music-from-the-renaissance-baroque-and-classical-period-describe-each-musical-piece-put-a-check-in-the-box-of-the-corresponding-characteristic-elem">
+                            20. Activity 2 Song Comparison Listen to the selected music from the Renaissance, Baroque, and Classical period Describe each musical piece. Put a check in the box of the corresponding characteristic element Title of the Compo Melody Tempo Dynamo Test Live Sadly slow Mader he Fast Mostly Mady Soft Loud Mone Potyphon Momoph hone onic Thomas Morley Love and Antonio Viva The Seasons FQ Haydn Symphony no in Malor Surprise movementanswer: patulong nito plsssalamat po​</h2><br />
+                        <p>Answer:</p><p>:)</p><p>Explanation:</p><p>1.John Dowland Fine Knacks for Ladies- Simple/Tuneful; Slow; Mostly Soft; Monophonic; Renaissance</p><p></p><p>2.G.F. Handel Halleluia Chorus- Simple/Tuneful; Moderate; Mostly Soft; Homophonic; Baroque  </p><p></p><p>3.L.V. Beethoven Symphony No.9, Op. 125, D Minor “Choral” Symphony No. 9-Complex; Fast; Mostly Loud; Polyphonic; Classical</p><p></p><p>1.Fine Knacks for Ladies- a poem expressing incompetence of the man though his feelings/heart is true</p><p></p><p>2.Halleluia- Handel from finishing Messiah he had a realization of God descending from the heavens with his angels</p><p></p><p>3.Symphony No. 9- recognized by its complexity, Beethoven came up with the final movement with vocal soloist from the poem ode to joy by Friedrich Schiller</p><p></p><p>hope it helps</p><br />
+                                            <h2 class="ez-toc-section" id="tulong-please-nonsensereportwhat-to-doanswer-the-following-questions-below-1-how-can-you-define-the-structure-of-the-earth2-how-does-the-interior-structure-of-earth-affect-the-processes-at-its">
+                            21. Tulong Please Nonsense=Report
+WHAT TO DO
+Answer the following questions below.
+1. How can you define the structure of the Earth?
+2. How does the interior structure of Earth affect the processes at its surface?
+3. What is dynamo effect?
+4. How important is the geomagnetic field?
+WHAT TO DO
+Make your own timeline that summarizes the development of the Plate Tectonic Theory. Your timeline should 
+include names of scientists and their contribution to plate tectonics.</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.) The structure of the earth is divided into four major components: the crust, the mantle, the outer core, and the inner core. Each layer has a unique chemical composition, physical state, and can impact life on Earth's surface.</p><p></p><p>2.) Each layer has a unique chemical composition, physical state, and can impact life on Earth's surface. Movement in the mantle caused by variations in heat from the core, cause the plates to shift, which can cause earthquakes and volcanic eruptions.</p><p></p><p>3.) In physics, the dynamo theory proposes a mechanism by which a celestial body such as Earth or a star generates a magnetic field. The dynamo theory describes the process through which a rotating, convecting, and electrically conducting fluid can maintain a magnetic field over astronomical time scales. </p><p></p><p>4.) Earth's magnetic field is thought to play an important role in making the planet habitable. Not only does a magnetic field set the direction of our compass needles, it also acts as a shield of sorts, deflecting away solar wind that might otherwise eat away at the atmosphere.</p><p><strong>Answer:</strong></p><p>1. The structure of the earth is divided into four major components: the crust, the mantle, the outer core, and the inner core. Each layer has a unique chemical composition, physical state, and can impact life on Earth's surface.</p><p></p><p>2. Each layer has a unique chemical composition, physical state, and can impact life on Earth's surface. Movement in the mantle caused by variations in heat from the core, cause the plates to shift, which can cause earthquakes and volcanic eruptions.</p><p></p><p>3. The dynamo theory/effect proposes a mechanism by which a celestial body such as Earth or a star generates a magnetic field. The dynamo theory describes the process through which a rotating, convecting, and electrically conducting fluid can maintain a magnetic field over astronomical time scales.</p><p></p><p>4. Generated by the motion of molten iron in Earth's core, the geomagnetic field protects our planet from cosmic radiation and from the charged particles emitted by our Sun. It also provides the basis for navigation with a compass.</p><p></p><p><strong>Explanation:</strong></p><p>Im not sure of the timeline sorry</p><p></p><p><strong>HOPE</strong><strong> </strong><strong>THIS</strong><strong> </strong><strong>HELPS</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="paano-gumawa-ng-diy-boat-gamit-ang-dynamo-%e2%80%8b">
+                            22. paano gumawa ng diy boat gamit ang dynamo ?​</h2><br />
+                        <p>mahirap yon koya</p><p>ako gomawa naako yan ang hirap</p><p>talaha</p><br />
+                                            <h2 class="ez-toc-section" id="pls-right-the-difference1-lion-tiger-dynamons-fish2-tiger-dog-cat-aprilfools3-fish-shark-megalodon%e2%80%8b">
+                            23. pls right the difference1. lion tiger dynamons fish2.Tiger dog cat aprilfools3.Fish shark megalodon​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Dynamons</p><p>2. Aprilfools</p><p>3. Fish</p><br />
+                                            <h2 class="ez-toc-section" id="san-dynamad-tymovesthe-simplest-way-of-charge-body-is-bynabbinginduction-conduction-consischarging-without-touching-the-charged-body-the-so-thathas-to-be-charged7-charging-by-induction-conduction-f">
+                            24. San Dynamad tymovesThe simplest way of charge body is bynabbinginduction, conduction consischarging without touching the charged body the so thathas to be charged7. Charging by induction, conduction friction ischarging by touching an object to be charged to a charged body​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Charging by conduction involves the contact of a charged object to a neutral object ... the process of charging by friction and charging by induction were described and explained ... A negatively charged metal sphere has an excess of electrons; those ... So when the positively charged aluminum plate is touched to the neutral ...</p><p></p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="scienceexplain-the-importnance-of-dynamo-effect%e2%80%8b">
+                            25. scienceexplain the importnance of Dynamo effect​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Dynamo Effect. The dynamo effect is a geophysical theory that explains the origin of the Earth's main magnetic field in terms of a self-exciting (or self-sustaining) dynamo. ... The electric current, in turn, produces a magnetic field that also interacts with the fluid motion to create a secondary magnetic field.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-mechanically-generated-electricity-does-not-belong-to-the-groupa-batteryb-diesel-driven-enginesc-dynamod-hydroelectric-power%e2%80%8b">
+                            26. Which of the following mechanically generated electricity does not belong to the groupA. BatteryB. Diesel driven enginesC. DynamoD. Hydroelectric power​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>B. Diesel driven engines</p><p></p><p><strong>Explanation:</strong></p><p></p><p>Diesel driven engines is an Exception. It has different Source/Information, Not similar to the other Answers. Im not sure, But i thinks thats the right Answer :')</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-difference-between-an-electric-motor-and-a-dynamo%e2%80%8b">
+                            27. what is the difference between an electric motor and a dynamo?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Dynamo is a device that converts the mechanical energy into electricity and electric motor is a device that converts electricity into mechanical energy.</p>Answer:<p>Dynamo is a device that converts the mechanical energy into electricity and electric motor is a device that converts electricity into mechanical energy.</p><p><strong>Explanation:</strong></p><p></p><p>#study carry on</p><br />
+                                            <h2 class="ez-toc-section" id="an-element-that-is-used-to-make-electrical-wire-electrical-motor-dynamo-and-coins%e2%80%8b">
+                            28. An element that is used to make electrical wire, electrical motor, dynamo and coins​</h2><br />
+                        <p>Answer:</p><p></p><p>Explanation:</p><p>Copper has the best electrical conductivity of any metal, except silver. A good electrical conductivity is the same as a small electrical resistance. Picture 1 A lightning conductor carries the charge safely to the ground. Copper wires allow an electric current to flow without much loss of energy.</p><br />
+                                            <h2 class="ez-toc-section" id="teacher-tess-in-her-grade-5-class-asked-her-pupils-to-do-an-experiment-teacher-tess-gave-each-group-the-materials-they-need-and-in-your-group-you-need-to-run-the-dynamo-in-order-for-the-attached">
+                            29. Teacher Tess, in her Grade 5 class, asked her pupils to do an experiment. Teacher Tess gave each group the materials they need. And in your group, you need to run the dynamo in order for the attached strips of cellophane to move just like a mini ceiling fan. But then, suddenly, it did not work. What do you think now is the best thing for you to do so that your experiment will work?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Every lesson created by a teacher should contain specific learning objectives from the curriculum. Effective lesson planning will also include a clear, differentiated sequence of learning that the children will follow in order to meet the chosen objectives. As part of that learning sequence, teachers create opportunities for learning. Teaching/Learning Materials enable teachers to offer more interactive, interesting and engaging learning activities.</p><p><strong>Explanation:</strong></p><strong>Hope </strong><strong>it </strong><strong>helps </strong><strong>and </strong><strong>mark </strong><strong>me </strong><strong>as </strong><strong>brainliest </strong><strong>thank </strong><strong>you </strong><strong>po:</strong><strong>)</strong><br />
+                                            <h2 class="ez-toc-section" id="41-lungs-is-made-of-a-spongy-tissue-heart-is-made-of-dense-connective-tissue-with-elastica-fiber-and-the-human-brain-is-made-of-soft-tissue-containing-nerve-cell-these-three-organs-need-protection">
+                            30. 41. Lungs is made of a spongy tissue, heart is made of dense connective tissue with elastica fiber and the human brain is made of soft tissue containing nerve cell. These three organs need protection from which of the following body system.A. Integumentary SystemC. Digestive SystemB. Respiratory SystemD. Skeletal System​</h2><br />
+                        <p><strong>Answer: </strong></p><p><strong>B. Respiratory System</strong></p><p></p><p><strong>Explanation:</strong></p><p><strong>Your lungs are part of the respiratory system, a group of organs and tissues that work together to help you breathe. The respiratory system's main job is to move fresh air into your body while removing waste gases</strong></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/599xYhZ3V0Q?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/ieee-43-2000-pdf.html">Ieee 43 2000 Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/who-are-the-modern-man-with-the-hoe.html">Who Are The Modern Man With The Hoe</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/if-there-s-one-more-gift-lyrics.html">If There s One More Gift Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/ang-gender-ay-tumutukoy-sa.html">Ang Gender Ay Tumutukoy Sa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/member-s-data-form-mdf-download.html">Member s Data Form Mdf Download</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/mahal-ko-o-mahal-ako-chords.html">Mahal Ko O Mahal Ako Chords</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/retorikal-na-pagugnay.html">Retorikal Na Pagugnay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/piyesa-para-sa-balagtasan.html">Piyesa Para Sa Balagtasan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/alfonso-linares-noli-me-tangere.html">Alfonso Linares Noli Me Tangere</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/a1-blueprint.html">A1 Blueprint</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/pinitpit-na-luya.html">Pinitpit Na Luya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/paano-magbasa-ng-ruler.html">Paano Magbasa Ng Ruler</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/banaue-rice-terraces-description-tagalog.html">Banaue Rice Terraces Description Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/gingerbread-man-play.html">Gingerbread Man Play</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/closing-remarks-for-acquaintance-party.html">Closing Remarks For Acquaintance Party</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/circumstances-of-being-a-solo-parent.html">Circumstances Of Being A Solo Parent</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/mdc-building-eastwood.html">Mdc Building Eastwood</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/cheat-code-monster-hunter-freedom-unite.html">Cheat Code Monster Hunter Freedom Unite</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/brgy-pio-del-pilar-zip-code.html">Brgy Pio Del Pilar Zip Code</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pingstudy.github.io/veneration-without-understanding-by-renato-constantino.html">Veneration Without Understanding By Renato Constantino</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pingstudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pingstudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pingstudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
